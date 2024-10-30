@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+
+<!-- HEADER -->
+<body class="bg-white-400">
+    <nav class="p-5 bg-white shadow static md:flex md:items-center md:justify-between">
+      <div class="flex justify-between items-center ">
+        <span class="text-2xl font-[Poppins] cursor-pointer">
+          <img class="w-36 inline"
+            src="/assets/img/logo.jpeg">
+        </span>
+  
+        <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+          <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+        </span>
+      </div>
+  
+      <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute z-100 bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+        <li class="mx-4 my-6 md:my-0">
+          <a href="index.html" class="text-l hover:text-cyan-500 duration-500">Home</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a href="edu.html" class="text-l hover:text-cyan-500 duration-500">Education</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a href="project.html" class="text-l hover:text-cyan-500 duration-500">Project</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a href="experience.html" class="text-l hover:text-cyan-500 duration-500">Experience</a>
+        </li>
+  <h2 class=""></h2>
+      </ul>
+    </nav>
+
+    <script>
+        function Menu(e){
+          let list = document.querySelector('ul');
+          e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+        }
+      </script>
+    </body
+
+<!-- HEADER -->
+
+<!-- SECTION -->
+<section>
+  <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+    <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
+      <div class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
+        <img
+          alt=""
+          src="assets/img/foto.jpeg"
+          class="absolute inset-0 h-full w-full object-cover"
+        />
+      </div>
+
+      <div class="lg:py-24">
+        <h2 class="text-3xl font-bold sm:text-4xl">Dimana Saya Belajar Sekarang?</h2>
+
+        <p class="mt-4 text-gray-600">
+          Saat ini saya sedang menempuh pendidikan di Institut Teknologi Sepuluh Nopember.
+          Saya merupakan mahasiswa dari departemen Teknik Komputer dan saat ini merupakan semester awal saya disini.
+          Saya bangga menjadi bagian dari Kampus Ibu Yang Luhur ini.
+        </p>
+
+        <a
+          href="https://www.its.ac.id/id/beranda/"
+          class="mt-8 inline-block rounded bg-blue-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400"
+        >
+          Tentang ITS
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- SECTION CLOSE -->
+
+<!-- SECTION 2 -->
+<!--
+  Heads up! 👋
+
+  This component comes with some `rtl` classes. Please remove them if they are not needed in your project.
+-->
+
+<section>
+  <div class="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+    <div class="grid grid-cols-1 gap-y-8 lg:grid-cols-2 lg:items-center lg:gap-x-16">
+      <div class="mx-auto max-w-lg text-center lg:mx-0 ltr:lg:text-left rtl:lg:text-right">
+        <h2 class="text-3xl font-bold sm:text-4xl">Rekam Jejak Pendidikan Saya</h2>
+
+        <p class="mt-4 text-gray-600">
+          Kurang lebih sudah 14 tahun lebih saya bersekolah mulai dari Taman Kanak Kanak hingga Sekarang.
+          Nah, Kemana saja sih saya selama ini mengenyam pendidikan
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 gap-4 sm:grid-cols-3">
+        <a
+          class="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
+          href="https://dapo.kemdikbud.go.id/sekolah/28EBEB7D7ED163EF8AE4"
+        >
+          <span class="inline-block rounded-lg bg-gray-50 p-3">
+            <svg
+              class="size-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+              <path
+                d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+              ></path>
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+              ></path>
+            </svg>
+          </span>
+
+          <h2 class="mt-2 font-bold">TK Aisyiah Banyundono Ponorogo</h2>
+
+          <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
+            
+          </p>
+        </a>
+
+        <a
+          class="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
+          href="https://www.sdhangtuah8surabaya.sch.id/"
+        >
+          <span class="inline-block rounded-lg bg-gray-50 p-3">
+            <svg
+              class="size-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+              <path
+                d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+              ></path>
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+              ></path>
+            </svg>
+          </span>
+
+          <h2 class="mt-2 font-bold">SD Hang Tuah 8 Surabaya</h2>
+
+          <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
+            
+          </p>
+        </a>
+
+        <a
+          class="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
+          href="https://akupintar.id/sekolah/-/cari-sekolah/detail_sekolah/smp-negeri-34-surabaya/83419120"
+        >
+          <span class="inline-block rounded-lg bg-gray-50 p-3">
+            <svg
+              class="size-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+              <path
+                d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+              ></path>
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+              ></path>
+            </svg>
+          </span>
+
+          <h2 class="mt-2 font-bold">SMP Negeri 34 Surabaya</h2>
+
+          <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
+            
+          </p>
+        </a>
+
+        <a
+          class="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
+          href="https://sman18sby.sch.id/"
+        >
+          <span class="inline-block rounded-lg bg-gray-50 p-3">
+            <svg
+              class="size-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+              <path
+                d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+              ></path>
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+              ></path>
+            </svg>
+          </span>
+
+          <h2 class="mt-2 font-bold">SMA Negeri 18 Surabaya</h2>
+
+          <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
+            
+          </p>
+        </a>
+
+        <a
+          class="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
+          href="https://www.its.ac.id/id/beranda/"
+        >
+          <span class="inline-block rounded-lg bg-gray-50 p-3">
+            <svg
+              class="size-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+              <path
+                d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+              ></path>
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+              ></path>
+            </svg>
+          </span>
+
+          <h2 class="mt-2 font-bold">Institut Teknologi Sepuluh Nopember</h2>
+
+          <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
+            
+          </p>
+        </a>
+
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- SECTION 2 CLOSE -->
+
+<!-- FOOTER -->
+<footer class="flex flex-col space-y-10 justify-center m-10">
+
+  <nav class="flex justify-center flex-wrap gap-6 text-gray-500 font-medium">
+    <a class="hover:text-gray-900" href="index.html">Home</a>
+    <a class="hover:text-gray-900" href="edu.html">Education</a>
+    <a class="hover:text-gray-900" href="project.html">Project</a>
+    <a class="hover:text-gray-900" href="experience.html">Experience</a>
+    <a class="hover:text-gray-900" href="wa">Contact</a>
+</nav>
+
+    <div class="flex justify-center space-x-5">
+        <a href="https://facebook.com/havid.pradana.7" target="_blank" rel="noopener noreferrer">
+            <img src="https://img.icons8.com/fluent/30/000000/facebook-new.png" />
+        </a>
+        <a href="https://linkedin.com/in/hafidz-ulum-ramadhani-377540306" target="_blank" rel="noopener noreferrer">
+            <img src="https://img.icons8.com/fluent/30/000000/linkedin-2.png" />
+        </a>
+        <a href="https://instagram.com/haafiidzzzz" target="_blank" rel="noopener noreferrer">
+            <img src="https://img.icons8.com/fluent/30/000000/instagram-new.png" />
+        </a>
+        <a href="https://whatsApp.com/" target="_blank" rel="noopener noreferrer">
+            <img src="https://img.icons8.com/fluent/30/000000/whatsapp.png" />
+        </a>
+        <a href="https://youtube.com/@hafidzulumm" target="_blank" rel="noopener noreferrer">
+            <img src="https://img.icons8.com/fluent/30/000000/youtube.png" />
+        </a>
+    </div>
+    <p class="text-center text-gray-700 font-medium">&copy; 2022 Hafidz-Ulum-Ramadhani</p>
+</footer>
+<!-- TUTUP FOOTER -->
+
+<!-- TAMBAHAN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+<script>
+    var typed = new Typed('.typing', {
+    strings: ['', 'Student College,'],
+    typeSpeed: 100,
+    BackSpeed: 60,
+    loop: true
+})
+</script>
+
+<script>
+  function menu (e){
+    let list = document.querySelector('ul');
+    console.log(e.name)
+    e.name === 'menu' ? (e.name = "close", list.classList.add('top-[80px]'), list.classList.add('opacity-100')) : (e.name = 'menu', list.classList.remove('top-[80px]'), list.classList.remove('opacity-100'))
+  }
+</script>
+</body>
+</html>
+<!-- TAMBAHAN -->

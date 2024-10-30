@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+<!-- HEADER -->
+<body class="bg-white-400">
+  <nav class="p-5 bg-white shadow static md:flex md:items-center md:justify-between">
+    <div class="flex justify-between items-center ">
+      <span class="text-2xl font-[Poppins] cursor-pointer">
+        <img class="w-36 inline"
+          src="/assets/img/logo.jpeg">
+      </span>
+
+      <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+      </span>
+    </div>
+
+    <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute z-100 bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+      <li class="mx-4 my-6 md:my-0">
+        <a href="index.html" class="text-l hover:text-cyan-500 duration-500">Home</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="edu.html" class="text-l hover:text-cyan-500 duration-500">Education</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="project.html" class="text-l hover:text-cyan-500 duration-500">Project</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="experience.html" class="text-l hover:text-cyan-500 duration-500">Experience</a>
+      </li>
+<h2 class=""></h2>
+    </ul>
+  </nav>
+
+  <script>
+    function Menu(e){
+      let list = document.querySelector('ul');
+      e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+    }
+  </script>
+</body
+<!-- TUTUP HEADER -->
+
+<!-- ISI 1 -->
+<section class="overflow-hidden rounded-lg shadow-2xl md:grid md:grid-cols-3">
+    <img
+      alt=""
+      src="/assets/img/project 1.jpeg"
+      class="h-32 w-fit object-cover md:h-fit"
+    />
+  
+    <div class="p-4 text-center sm:p-6 md:col-span-2 lg:p-8">
+      <p class="text-sm font-semibold uppercase tracking-widest">My Best Project</p>
+  
+      <h2 class="mt-6 font-black uppercase">
+        <span class="text-4xl font-black sm:text-5xl lg:text-6xl"> Get 3rd Winner Competition of Digital Poster </span>
+  
+        <span class="mt-2 block text-sm">On classmeeting by Osis Smandallas 2021</span>
+      </h2>
+  
+      <a
+        class="mt-8 inline-block w-full bg-black py-4 text-sm font-bold uppercase tracking-widest text-white"
+        href="#"
+      >
+        Get HD Picture
+      </a>
+  
+      <p class="mt-8 text-xs font-medium uppercase text-gray-400">
+        Just using PixelLab 
+      </p>
+    </div>
+  </section>
+<!-- ISI 2 TUTUP -->
+
+<!-- ISI -->
+<section>
+    <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+      <header>
+        <h2 class="text-xl font-bold text-gray-900 sm:text-3xl">Some of my Project Collection</h2>
+  
+        <p class="mt-4 max-w-md text-gray-500">
+          Here is some of my projects that i do in senior high school
+        </p>
+      </header>
+  
+      <ul class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <li>
+          <a href="#" class="group block overflow-hidden">
+            <img
+              src="/assets/img/project coll 1.jpeg"
+              alt=""
+              class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]"
+            />
+  
+            <div class="relative bg-white pt-3">
+              <h3 class="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4">
+                Infografis
+              </h3>
+  
+              <p class="mt-2">
+                <span class="sr-only"> Regular Price </span>
+  
+                <span class="tracking-wider text-gray-900"> Untuk Tugas </span>
+              </p>
+            </div>
+          </a>
+        </li>
+  
+        <li>
+          <a href="#" class="group block overflow-hidden">
+            <img
+              src="/assets/img/project coll 2.jpeg"
+              alt=""
+              class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]"
+            />
+  
+            <div class="relative bg-white pt-3">
+              <h3 class="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4">
+                Infografis Lomba
+              </h3>
+  
+              <p class="mt-2">
+                <span class="sr-only"> Regular Price </span>
+  
+                <span class="tracking-wider text-gray-900"> Untuk Lomba </span>
+              </p>
+            </div>
+          </a>
+        </li>
+  
+        <li>
+          <a href="#" class="group block overflow-hidden">
+            <img
+              src="/assets/img/project coll 3.jpeg"
+              alt=""
+              class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]"
+            />
+  
+            <div class="relative bg-white pt-3">
+              <h3 class="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4">
+                Executive Summary
+              </h3>
+  
+              <p class="mt-2">
+                <span class="sr-only"> Regular Price </span>
+  
+                <span class="tracking-wider text-gray-900"> Untuk lomba   </span>
+              </p>
+            </div>
+          </a>
+        </li>
+  
+        <li>
+          <a href="#" class="group block overflow-hidden">
+            <img
+              src="/assets/img/project coll 4.jpeg"
+              alt=""
+              class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]"
+            />
+  
+            <div class="relative bg-white pt-3">
+              <h3 class="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4">
+                Streetwear PUNK
+              </h3>
+  
+              <p class="mt-2">
+                <span class="sr-only"> Regular Price </span>
+  
+                <span class="tracking-wider text-gray-900"> Tidak Dijual </span>
+              </p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+<!-- TUTUP ISI -->
+
+<!-- FOOTER -->
+<footer class="flex flex-col space-y-10 justify-center m-10">
+
+  <nav class="flex justify-center flex-wrap gap-6 text-gray-500 font-medium">
+    <a class="hover:text-gray-900" href="index.html">Home</a>
+    <a class="hover:text-gray-900" href="edu.html">Education</a>
+    <a class="hover:text-gray-900" href="project.html">Project</a>
+    <a class="hover:text-gray-900" href="experience.html">Experience</a>
+    <a class="hover:text-gray-900" href="wa">Contact</a>
+</nav>
+
+  <div class="flex justify-center space-x-5">
+      <a href="https://facebook.com/havid.pradana.7" target="_blank" rel="noopener noreferrer">
+          <img src="https://img.icons8.com/fluent/30/000000/facebook-new.png" />
+      </a>
+      <a href="https://linkedin.com/in/hafidz-ulum-ramadhani-377540306" target="_blank" rel="noopener noreferrer">
+          <img src="https://img.icons8.com/fluent/30/000000/linkedin-2.png" />
+      </a>
+      <a href="https://instagram.com/haafiidzzzz" target="_blank" rel="noopener noreferrer">
+          <img src="https://img.icons8.com/fluent/30/000000/instagram-new.png" />
+      </a>
+      <a href="https://whatsApp.com/" target="_blank" rel="noopener noreferrer">
+          <img src="https://img.icons8.com/fluent/30/000000/whatsapp.png" />
+      </a>
+      <a href="https://youtube.com/@hafidzulumm" target="_blank" rel="noopener noreferrer">
+          <img src="https://img.icons8.com/fluent/30/000000/youtube.png" />
+      </a>
+  </div>
+  <p class="text-center text-gray-700 font-medium">&copy; 2022 Hafidz-Ulum-Ramadhani</p>
+</footer>
+<!-- TUTUP FOOTER -->
+
+</body>
+</html>
