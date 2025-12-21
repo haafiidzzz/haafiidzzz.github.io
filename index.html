@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio | Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        fontFamily: {
+          poppins: ['Poppins', 'sans-serif'],
+        }
+      }
+    }
+  </script>
+</head>
+
+<script>
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('opacity-100', 'translate-y-0');
+      }
+    });
+  });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const btn = document.getElementById("menu-btn");
+    const menu = document.getElementById("mobile-menu");
+
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("opacity-0");
+      menu.classList.toggle("pointer-events-none");
+      menu.classList.toggle("-translate-y-4");
+    });
+  });
+</script>
+
+
+<body class="bg-[#0b0b0b] text-white font-poppins overflow-x-hidden">
+
+
+<!-- NAVBAR -->
+ <!-- NAVBAR -->
+  <nav class="relative w-full backdrop-blur bg-black/60 border-b border-white/5">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold text-purple-500">
+      Mas<span class="text-purple-300">Hafidz</span>
+    </h1>
+
+    <ul class="hidden md:flex gap-8 text-gray-300">
+      <li><a href="index.html" class="hover:text-purple-400">Home</a></li>
+      <li><a href="project.html" class="hover:text-purple-400">Project</a></li>
+      <li><a href="experience.html" class="hover:text-purple-400">Experience</a></li>
+      <li><a href="skills.html" class="hover:text-purple-400">Skills</a></li>
+      <li>
+        <a href="contact.html"
+          class="px-4 py-2 bg-purple-600 rounded-lg text-white hover:bg-purple-700">
+          Contact Me
+        </a>
+      </li>
+    </ul>
+    <!-- HAMBURGER BUTTON (MOBILE) -->
+<button id="menu-btn" class="md:hidden text-white focus:outline-none">
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none"
+       viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"/>
+  </svg>
+</button>
+
+  </div>
+</nav>
+
+<!-- MOBILE MENU (OVERLAY) -->
+<div id="mobile-menu"
+     class="fixed top-[72px] left-0 w-full
+            bg-black/95 backdrop-blur
+            border-t border-white/5
+            md:hidden
+            opacity-0 pointer-events-none
+            -translate-y-4
+            transition-all duration-300 ease-out
+            z-50">
+
+  <ul class="flex flex-col gap-6 px-6 py-8 text-gray-300">
+    <li><a href="index.html" class="hover:text-purple-400">Home</a></li>
+    <li><a href="project.html" class="hover:text-purple-400">Project</a></li>
+    <li><a href="experience.html" class="hover:text-purple-400">Experience</a></li>
+    <li><a href="skills.html" class="hover:text-purple-400">Skills</a></li>
+    <li>
+      <a href="contact.html"
+         class="block text-center px-4 py-2 bg-purple-600 rounded-lg text-white">
+        Contact Me
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+
+<!-- (PASTE NAVBAR DI SINI) -->
+
+<!-- HERO -->
+<section class="pt-36 max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+  <div class="space-y-6 animate-fade-up">
+    <p class="text-gray-400">Hello Buds</p>
+
+    <h1 class="text-4xl md:text-5xl font-bold">
+      I am <span class="text-purple-500">Hafidz Ulum Ramadhani</span>
+    </h1>
+
+    <p class="text-purple-400">Computer Engineering Student</p>
+
+    <p class="text-gray-400 leading-relaxed">
+      I’m a person who has a keen interest in design layout and developing
+      attractive digital experiences.
+    </p>
+
+    <div class="flex gap-4">
+      <a href="file/Hafidz Ulum Ramadhani-resume.pdf"
+        class="px-6 py-3 bg-purple-600 rounded-lg hover:bg-purple-700 transition">
+        Download CV
+      </a>
+      <a href="#"
+        class="px-6 py-3 border border-purple-600 rounded-lg text-purple-400 hover:bg-purple-600 hover:text-white transition">
+        More
+      </a>
+    </div>
+  </div>
+
+<div class="flex justify-center animate-fade-up">
+  <img src="assets/icon/Desain tanpa judul.png" alt="Hero Image"
+       class="w-74 drop-shadow-[0_0_40px_rgba(124,58,237,0.35)]">
+</div>
+
+
+</section>
+
+<!-- ABOUT -->
+<section class="relative bg-[#0b0b0b] overflow-hidden"><!-- PURPLE AMBIENT GLOW -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+            w-[700px] h-[700px]
+            bg-purple-500/20
+            blur-[180px]
+            rounded-full
+            pointer-events-none">
+</div>
+
+  <div class="max-w-7xl mx-auto px-6 pt-48 pb-32 text-center">
+
+    <p class="text-sm tracking-widest text-purple-400 mb-4">
+      ABOUT ME
+    </p>
+
+    <h2 class="text-4xl md:text-5xl font-semibold leading-tight mb-5">
+      Currently, I have a strong <br>interest in
+      editing, exercising, <br> and web development.
+
+    </h2>
+
+    <p class="text-gray-400 max-w-3xl mx-auto leading-relaxed">
+      Besides that, I have a strong understanding of HTML, CSS, and JavaScript
+fundamentals, combined with solid design skills. I also enjoy staying
+active through sports such as hiking and futsal.
+
+    </p>
+
+<!-- ICON ROW (NO BOX) -->
+<div class="mt-16 flex flex-wrap justify-center gap-12 max-w-4xl mx-auto">
+
+  <!-- FIGMA -->
+  <img
+    src="https://cdn.simpleicons.org/figma/ffffff"
+    alt="Figma"
+    class="w-12 h-12 opacity-80 hover:opacity-100 hover:scale-110 transition
+           hover:drop-shadow-[0_0_15px_rgba(124,58,237,0.6)]">
+
+  <!-- STRAVA -->
+  <img
+    src="https://cdn.simpleicons.org/strava/ffffff"
+    alt="Strava"
+    class="w-12 h-12 opacity-80 hover:opacity-100 hover:scale-110 transition
+           hover:drop-shadow-[0_0_15px_rgba(124,58,237,0.6)]">
+
+    <!-- AFFINITY DESIGNER -->
+  <img
+    src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/affinitydesigner.svg"
+    alt="Affinity Designer"
+    class="w-12 h-12 invert opacity-80
+           hover:opacity-100 hover:scale-110 transition
+           hover:drop-shadow-[0_0_15px_rgba(124,58,237,0.6)]">
+
+  <!-- ADOBE PHOTOSHOP -->
+<img
+  src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/adobephotoshop.svg"
+  alt="Adobe Photoshop"
+  class="w-12 h-12 opacity-80 invert
+         hover:opacity-100 hover:scale-110 transition
+         hover:drop-shadow-[0_0_15px_rgba(124,58,237,0.6)]">
+
+
+</div>
+
+
+
+</div>
+  </div>
+</section>
+
+
+
+<!-- EDUCATION TIMELINE -->
+<section class="mt-40 max-w-7xl mx-auto px-6">
+
+  <div class="grid md:grid-cols-2 gap-20">
+
+    <!-- LEFT -->
+    <div>
+      <p class="text-purple-400 text-sm tracking-widest mb-3">MY EDUCATION</p>
+
+      <h2 class="text-4xl font-bold leading-tight mb-6">
+        I am currently a student in<br />university.
+      </h2>
+
+      <p class="text-gray-400 leading-relaxed mb-4">
+        I was born in Ponorogo City on October 17th, 2005, and currently live there.
+        I am interested in web development and editing.
+      </p>
+
+      <p class="text-gray-400 leading-relaxed">
+        I am currently attending INSTITUT TEKNOLOGI SEPULUH NOPEMBER and majoring in Computer Engineering.
+      </p>
+    </div>
+
+    
+
+    <!-- RIGHT -->
+    <div class="relative pl-10 space-y-12">
+
+      <!-- LINE (FIXED) -->
+      <div class="absolute left-2 inset-y-0 w-[2px] bg-gradient-to-b from-purple-500/50 to-transparent"></div>
+
+      <!-- ITEM -->
+      <div class="flex gap-6">
+        <div class="relative z-10 mt-1">
+          <div class="w-4 h-4 rounded-full bg-purple-500 shadow-[0_0_15px_#7c3aed]"></div>
+        </div>
+        <div class="bg-[#141414] p-6 rounded-xl w-full hover:scale-[1.02] transition">
+          <h3 class="font-semibold">SMP Negeri 34 Surabaya</h3>
+          <p class="text-sm text-gray-400">Junior High School</p>
+          <span class="text-xs text-purple-400">2012 – 2018</span>
+        </div>
+      </div>
+
+      <!-- ITEM -->
+      <div class="flex gap-6">
+        <div class="relative z-10 mt-1">
+          <div class="w-4 h-4 rounded-full bg-purple-500 shadow-[0_0_15px_#7c3aed]"></div>
+        </div>
+        <div class="bg-[#141414] p-6 rounded-xl w-full hover:scale-[1.02] transition">
+          <h3 class="font-semibold">SMA Negeri 18 Surabaya</h3>
+          <p class="text-sm text-gray-400">Senior High School</p>
+          <span class="text-xs text-purple-400">2018 – 2021</span>
+        </div>
+      </div>
+
+      <!-- ITEM -->
+      <div class="flex gap-6">
+        <div class="relative z-10 mt-1">
+          <div class="w-4 h-4 rounded-full bg-purple-500 shadow-[0_0_15px_#7c3aed]"></div>
+        </div>
+        <div class="bg-[#141414] p-6 rounded-xl w-full hover:scale-[1.02] transition">
+          <h3 class="font-semibold">Institut Teknologi Sepuluh Nopember</h3>
+          <p class="text-sm text-gray-400">University</p>
+          <span class="text-xs text-purple-400">2021 – Now</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- SKILLS -->
+<section class="mt-40 text-center">
+  <h2 class="text-3xl font-bold mb-10">Programming Languages</h2>
+
+  <div class="flex justify-center flex-wrap gap-10">
+
+    <!-- HTML -->
+    <img
+      src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/html5.svg"
+      alt="HTML"
+      class="w-14 h-14 invert opacity-80
+             hover:opacity-100 hover:scale-110 transition
+             hover:drop-shadow-[0_0_15px_rgba(124,58,237,0.6)]">
+
+    <!-- CSS -->
+    <img
+      src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/css3.svg"
+      alt="CSS"
+      class="w-14 h-14 invert opacity-80
+             hover:opacity-100 hover:scale-110 transition
+             hover:drop-shadow-[0_0_15px_rgba(124,58,237,0.6)]">
+
+    <!-- JAVASCRIPT -->
+    <img
+      src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/javascript.svg"
+      alt="JavaScript"
+      class="w-14 h-14 invert opacity-80
+             hover:opacity-100 hover:scale-110 transition
+             hover:drop-shadow-[0_0_15px_rgba(124,58,237,0.6)]">
+
+    <!-- PYTHON -->
+    <img
+      src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/python.svg"
+      alt="Python"
+      class="w-14 h-14 invert opacity-80
+             hover:opacity-100 hover:scale-110 transition
+             hover:drop-shadow-[0_0_15px_rgba(124,58,237,0.6)]">
+
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="mt-40 bg-[#0b0b0b] border-t border-white/10">
+  <div class="max-w-7xl mx-auto px-6 py-16">
+
+    <div class="grid md:grid-cols-2 gap-12">
+
+      <!-- LEFT -->
+      <div>
+        <h2 class="text-2xl font-bold mb-4">
+          Get in <span class="text-purple-500">Touch</span>
+        </h2>
+
+        <p class="text-gray-400 max-w-md mb-6">
+          For business inquiries, collaborations, or partnerships,
+          feel free to reach out to me.
+        </p>
+
+        <ul class="space-y-4 text-gray-300 mb-8">
+          <li class="flex items-center gap-3">
+            <span class="text-purple-400">📞</span>
+            <span>+62 812-2509-3482</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="text-purple-400">✉️</span>
+            <span>ulumramadhani5@gmail.com</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="text-purple-400">📍</span>
+            <span>Taman, Sidoarjo</span>
+          </li>
+        </ul>
+
+        <!-- SOCIAL ICONS -->
+        <div class="flex gap-4">
+
+          <!-- IG -->
+          <a href="https://instagram.com/haafiidzzzz" target="_blank"
+             class="w-10 h-10 flex items-center justify-center
+                    rounded-full border border-white/10
+                    hover:border-purple-500
+                    transition
+                    hover:shadow-[0_0_20px_rgba(124,58,237,0.6)]">
+            <img
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/instagram.svg"
+              class="w-5 h-5 invert opacity-80 hover:opacity-100 transition"
+              alt="Instagram">
+          </a>
+
+          <!-- WHATSAPP -->
+          <a href="https://wa.me/6281225093482" target="_blank"
+             class="w-10 h-10 flex items-center justify-center
+                    rounded-full border border-white/10
+                    hover:border-purple-500
+                    transition
+                    hover:shadow-[0_0_20px_rgba(124,58,237,0.6)]">
+            <img
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/whatsapp.svg"
+              class="w-5 h-5 invert opacity-80 hover:opacity-100 transition"
+              alt="WhatsApp">
+          </a>
+
+          <!-- FACEBOOK -->
+          <a href="https://facebook.com/Hafidz Ulum Ramadhani" target="_blank"
+             class="w-10 h-10 flex items-center justify-center
+                    rounded-full border border-white/10
+                    hover:border-purple-500
+                    transition
+                    hover:shadow-[0_0_20px_rgba(124,58,237,0.6)]">
+            <img
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/facebook.svg"
+              class="w-5 h-5 invert opacity-80 hover:opacity-100 transition"
+              alt="Facebook">
+          </a>
+
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="flex md:justify-end">
+        <div class="bg-[#141414] border border-white/10 rounded-2xl p-8 w-full md:w-[360px]">
+          <h3 class="font-semibold mb-4">Let’s Work Together</h3>
+          <p class="text-gray-400 text-sm mb-6">
+            Open for freelance, creative projects,
+            and collaborations.
+          </p>
+          <a href="mailto:ulumramadhani5@gmail.com"
+             class="inline-block px-6 py-3 bg-purple-600 rounded-lg
+                    hover:bg-purple-700 transition">
+            Email Me
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="mt-16 text-center text-gray-500 text-sm">
+      © 2025 Hafidz Ulum Ramadhani
+    </div>
+
+  </div>
+</footer>
