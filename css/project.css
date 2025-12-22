@@ -107,6 +107,108 @@
   transform: scale(1.06);
 }
 
+
+/* ============================= */
+/* GLOBAL PURPLE GRID BACKGROUND */
+/* ============================= */
+
+.global-grid::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.7),
+    transparent
+  );
+}
+
+
+.global-grid {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+
+  background:
+    radial-gradient(
+      ellipse at top center,
+      rgba(124, 58, 237, 0.28),
+      transparent 65%
+    ),
+    linear-gradient(
+      to right,
+      rgba(124, 58, 237, 0.16) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      to bottom,
+      rgba(124, 58, 237, 0.16) 1px,
+      transparent 1px
+    );
+
+  background-size:
+    100% 100%,
+    48px 48px,
+    48px 48px;
+}
+
+
+
+html, body {
+  height: 100%;
+}
+
+
+
+/* NAVBAR FINAL */
+nav {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.65),
+    rgba(0, 0, 0, 0.35),
+    rgba(0, 0, 0, 0.15)
+  );
+}
+
+nav {
+  background: transparent !important;
+  backdrop-filter: none !important;
+  box-shadow: none !important;
+}
+
+
+nav a:hover {
+  color: #a78bfa;
+}
+
+
+.footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(124, 58, 237, 0.15),
+    rgba(0, 0, 0, 0.85)
+  );
+  z-index: 0;
+}
+
+.footer > * {
+  position: relative;
+  z-index: 1;
+}
+
+
+nav a:hover {
+  color: #a78bfa;
+}
+
+
 /* RESPONSIVE */
 @media (max-width: 900px) {
   .project-grid {

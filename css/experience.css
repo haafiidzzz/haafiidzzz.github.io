@@ -92,6 +92,104 @@
   }
 }
 
+
+.global-grid {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+
+  background:
+    radial-gradient(
+      ellipse at top center,
+      rgba(124, 58, 237, 0.22),
+      transparent 70%
+    ),
+    linear-gradient(
+      to right,
+      rgba(124, 58, 237, 0.12) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      to bottom,
+      rgba(124, 58, 237, 0.12) 1px,
+      transparent 1px
+    );
+
+  background-size:
+    100% 100%,
+    48px 48px,
+    48px 48px;
+}
+
+nav,
+section,
+footer {
+  position: relative;
+  z-index: 1;
+}
+
+html, body {
+  height: 100%;
+}
+
+nav {
+  background: transparent;
+}
+
+nav a {
+  color: #f9fafb;      /* PUTIH CERAH */
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #c4b5fd;
+}
+
+.logo {
+  color: #d8b4fe;
+  text-shadow:
+    0 0 10px rgba(168, 85, 247, 0.45),
+    0 0 20px rgba(124, 58, 237, 0.25);
+}
+
+/* CTA */
+nav .btn-nav,
+nav .contact-btn {
+  background: linear-gradient(
+    135deg,
+    #a855f7,
+    #7c3aed
+  );
+  color: #fff;
+  box-shadow: 0 8px 24px rgba(124, 58, 237, 0.45);
+}
+
+
+.footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(124, 58, 237, 0.15),
+    rgba(0, 0, 0, 0.85)
+  );
+  z-index: 0;
+}
+
+.footer > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Supaya konten di atas grid */
+.experience > *:not(.grid-bg) {
+  position: relative;
+  z-index: 1;
+}
+
+
 @media (max-width: 768px) {
   .exp-img {
     width: 100%;
