@@ -6,26 +6,82 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/contact.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+
 
 </head>
-<body>
-  
 
-<nav class="navbar">
-  <div class="nav-container">
-    <div class="logo">Mas<span>Hafidz</span></div>
-    <div class="menu-toggle" id="menu-toggle">
-      <span></span><span></span><span></span>
-    </div>
-    <ul class="nav-menu" id="nav-menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="project.html">Project</a></li>
-      <li><a href="experience.html">Experience</a></li>
-      <li><a href="skills.html">Skills</a></li>
-      <li><a class="active btn-nav" href="contact.html">Contact Me</a></li>
+
+<body>
+ <!-- SCRIPT -->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const btn = document.getElementById("menu-btn");
+    const menu = document.getElementById("mobile-menu");
+
+    if (btn && menu) {
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    }
+  });
+</script>
+</body>
+
+
+
+<!-- NAVBAR -->
+<nav class="w-full fixed top-0 left-0 z-50 backdrop-blur bg-black/60 border-b border-white/5">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+    <!-- LOGO -->
+    <h1 class="text-xl font-bold text-purple-500">
+      Mas<span class="text-purple-300">Hafidz</span>
+    </h1>
+
+    <!-- DESKTOP MENU -->
+    <ul class="hidden md:flex gap-8 text-gray-300">
+      <li><a href="index.html" class="hover:text-purple-400">Home</a></li>
+      <li><a href="project.html" class="hover:text-purple-400">Project</a></li>
+      <li><a href="experience.html" class="hover:text-purple-400">Experience</a></li>
+      <li><a href="skills.html" class="hover:text-purple-400">Skills</a></li>
+      <li>
+        <a href="contact.html"
+           class="px-4 py-2 bg-purple-600 rounded-lg text-white hover:bg-purple-700">
+          Contact Me
+        </a>
+      </li>
     </ul>
+
+    <!-- HAMBURGER -->
+    <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none"
+           viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+
   </div>
 </nav>
+
+<!-- MOBILE MENU -->
+<div id="mobile-menu"
+     class="hidden fixed top-[72px] left-0 w-full bg-black/95 backdrop-blur border-t border-white/5 z-40">
+  <ul class="flex flex-col gap-6 px-6 py-8 text-gray-300">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="project.html">Project</a></li>
+    <li><a href="experience.html">Experience</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li>
+      <a href="contact.html"
+         class="block text-center px-4 py-2 bg-purple-600 rounded-lg text-white">
+        Contact Me
+      </a>
+    </li>
+  </ul>
+</div>
+
 
 <!-- CONTACT ICON BAR (ABOVE GET IN TOUCH) -->
 <section class="contact-icon-bar">
@@ -33,14 +89,20 @@
     <a href="mailto:ulumramadhani5@gmail.com">
       <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/gmail.svg">
     </a>
-    <a href="https://instagram.com/username" target="_blank">
+    <a href="https://instagram.com/haafiidzzzz" target="_blank">
       <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/instagram.svg">
     </a>
-    <a href="https://facebook.com/username" target="_blank">
+    <a href="https://facebook.com/Hafidz Ulum Ramadhani" target="_blank">
       <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/facebook.svg">
     </a>
-    <a href="https://linkedin.com/in/username" target="_blank">
+    <a href="https://linkedin.com/in/www.linkedin.com/in/
+hafidz-ulum-ramadhani-377540306
+" target="_blank">
       <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/linkedin.svg">
+    </a>
+    <a href="https://github.com/haafiidzzz" target="_blank"
+       aria-label="GitHub">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg">
     </a>
   </div>
 </section>
@@ -51,56 +113,104 @@
 
 
 
+<!-- FOOTER -->
+<footer class="mt-40 border-t border-white/10">
+  <div class="max-w-7xl mx-auto px-6 py-16">
 
-<footer class="footer">
-  <div class="footer-container">
+    <div class="grid md:grid-cols-2 gap-12">
 
-    <!-- LEFT -->
-    <div class="footer-left">
-      <h2>Get in <span>Touch</span></h2>
-      <p>
-        For business inquiries, collaborations, or partnerships,
-        feel free to reach out to me.
-      </p>
+      <!-- LEFT -->
+      <div>
+        <h2 class="text-2xl font-bold mb-4">
+          Get in <span class="text-purple-500">Touch</span>
+        </h2>
 
-      <ul class="footer-contact">
-        <li>📞 +62 812-2509-3482</li>
-        <li>✉️ ulumramadhani5@gmail.com</li>
-        <li>📍 Taman, Sidoarjo</li>
-      </ul>
+        <p class="text-gray-400 max-w-md mb-6">
+          For business inquiries, collaborations, or partnerships,
+          feel free to reach out to me.
+        </p>
 
-      <!-- ICONS -->
-      <div class="footer-socials">
-        <a href="mailto:ulumramadhani5@gmail.com">
-          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/gmail.svg">
-        </a>
-        <a href="https://instagram.com/username" target="_blank">
-          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/instagram.svg">
-        </a>
-        <a href="https://facebook.com/username" target="_blank">
-          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/facebook.svg">
-        </a>
-        <a href="https://linkedin.com/in/username" target="_blank">
-          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/linkedin.svg">
-        </a>
+        <ul class="space-y-4 text-gray-300 mb-8">
+          <li class="flex items-center gap-3">
+            <span class="text-purple-400">📞</span>
+            <span>+62 812-2509-3482</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="text-purple-400">✉️</span>
+            <span>ulumramadhani5@gmail.com</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="text-purple-400">📍</span>
+            <span>Taman, Sidoarjo</span>
+          </li>
+        </ul>
+
+        <!-- SOCIAL ICONS -->
+        <div class="flex gap-4">
+
+          <!-- IG -->
+          <a href="https://instagram.com/haafiidzzzz" target="_blank"
+             class="w-10 h-10 flex items-center justify-center
+                    rounded-full border border-white/10
+                    hover:border-purple-500
+                    transition
+                    hover:shadow-[0_0_20px_rgba(124,58,237,0.6)]">
+            <img
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/instagram.svg"
+              class="w-5 h-5 invert opacity-80 hover:opacity-100 transition"
+              alt="Instagram">
+          </a>
+
+          <!-- WHATSAPP -->
+          <a href="https://wa.me/6281225093482" target="_blank"
+             class="w-10 h-10 flex items-center justify-center
+                    rounded-full border border-white/10
+                    hover:border-purple-500
+                    transition
+                    hover:shadow-[0_0_20px_rgba(124,58,237,0.6)]">
+            <img
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/whatsapp.svg"
+              class="w-5 h-5 invert opacity-80 hover:opacity-100 transition"
+              alt="WhatsApp">
+          </a>
+
+          <!-- FACEBOOK -->
+          <a href="https://facebook.com/Hafidz Ulum Ramadhani" target="_blank"
+             class="w-10 h-10 flex items-center justify-center
+                    rounded-full border border-white/10
+                    hover:border-purple-500
+                    transition
+                    hover:shadow-[0_0_20px_rgba(124,58,237,0.6)]">
+            <img
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/facebook.svg"
+              class="w-5 h-5 invert opacity-80 hover:opacity-100 transition"
+              alt="Facebook">
+          </a>
+
+        </div>
       </div>
+
+      <!-- RIGHT -->
+      <div class="flex md:justify-end">
+        <div class="bg-[#141414] border border-white/10 rounded-2xl p-8 w-full md:w-[360px]">
+          <h3 class="font-semibold mb-4">Let’s Work Together</h3>
+          <p class="text-gray-400 text-sm mb-6">
+            Open for freelance, creative projects,
+            and collaborations.
+          </p>
+          <a href="mailto:ulumramadhani5@gmail.com"
+             class="inline-block px-6 py-3 bg-purple-600 rounded-lg
+                    hover:bg-purple-700 transition">
+            Email Me
+          </a>
+        </div>
+      </div>
+
     </div>
 
-    <!-- RIGHT -->
-    <div class="footer-right">
-      <h3>Let’s Work Together</h3>
-      <p>
-        Open for freelance, creative projects,
-        and collaborations.
-      </p>
-      <a href="mailto:ulumramadhani5@gmail.com" class="footer-btn">
-        Email Me
-      </a>
+    <div class="mt-16 text-center text-gray-500 text-sm">
+      © 2025 Hafidz Ulum Ramadhani
     </div>
 
-  </div>
-
-  <div class="footer-bottom">
-    © 2025 Hafidz Ulum Ramadhani
   </div>
 </footer>
