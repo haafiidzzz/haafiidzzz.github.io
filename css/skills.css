@@ -103,14 +103,6 @@
   background: linear-gradient(to bottom, #0b0b0b, #050505);
 }
 
-.contact-footer {
-  max-width: 1200px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-}
-
 .contact-left h2 {
   font-size: 28px;
   font-weight: 700;
