@@ -8,30 +8,43 @@
   <link rel="stylesheet" href="css/contact.css">
   <script src="https://cdn.tailwindcss.com"></script>
 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+
+ <script>
+    tailwind.config = {
+      theme: {
+        fontFamily: {
+          poppins: ['Poppins', 'sans-serif'],
+        }
+      }
+    }
+  </script>
+  
 
 </head>
 
+<body class="bg-[#0b0b0b] text-white font-poppins overflow-x-hidden">
 
-<body>
- <!-- SCRIPT -->
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const btn = document.getElementById("menu-btn");
-    const menu = document.getElementById("mobile-menu");
+  <!-- SCRIPT -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const btn = document.getElementById("menu-btn");
+      const menu = document.getElementById("mobile-menu");
 
-    if (btn && menu) {
-      btn.addEventListener("click", () => {
-        menu.classList.toggle("hidden");
-      });
-    }
-  });
-</script>
-</body>
+      if (btn && menu) {
+        btn.addEventListener("click", () => {
+          menu.classList.toggle("hidden");
+        });
+      }
+    });
+  </script>
+
 
 
 
 <!-- NAVBAR -->
-<nav class="w-full fixed top-0 left-0 z-50 backdrop-blur bg-black/60 border-b border-white/5">
+  <nav class="w-full sticky top-0 z-50 backdrop-blur bg-black/60 border-b border-white/5">
   <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
     <!-- LOGO -->

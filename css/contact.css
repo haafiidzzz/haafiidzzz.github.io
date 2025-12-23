@@ -11,7 +11,7 @@ body {
   font-family: 'Poppins', sans-serif;
   background: #0b0b0b;
   color: #ffffff;
-  padding-top: 80px; /* offset navbar fixed */
+  padding-top: 0; /* offset navbar fixed */
 }
 
 /* CONTACT ICON BAR */
@@ -172,10 +172,20 @@ body {
     margin-top: 80px;
   }
 
+  /* UBAH JADI GRID 2x2 */
   .icon-container {
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
   }
 
+  .icon-container a {
+    width: 60px;
+    height: 60px;
+  }
+
+  /* FOOTER */
   .footer-container {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -204,3 +214,4 @@ body {
     font-size: 13px;
   }
 }
+
