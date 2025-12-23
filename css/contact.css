@@ -1,6 +1,4 @@
-/* ============================= */
-/* RESET */
-/* ============================= */
+
 * {
   margin: 0;
   padding: 0;
@@ -11,14 +9,14 @@ body {
   font-family: 'Poppins', sans-serif;
   background: #0b0b0b;
   color: #ffffff;
-  padding-top: 0; /* offset navbar fixed */
+  padding-top: 0; 
 }
 
-/* CONTACT ICON BAR */
+
 .contact-icon-bar {
   width: 100%;
   display: flex;
-  justify-content: center;   /* TENGAH HORIZONTAL */
+  justify-content: center;   
   margin: 40px 0 60px;
 }
 
@@ -27,9 +25,9 @@ body {
   gap: 18px;
 }
 
-/* WRAPPER ICON */
+
 .icon-container a {
-  width: 65px;               /* UKURAN SEDANG */
+  width: 65px;               
   height: 65px;
   border-radius: 50%;
   border: 1px solid rgba(255,255,255,0.15);
@@ -39,7 +37,7 @@ body {
   transition: all 0.3s ease;
 }
 
-/* ICON SVG */
+
 .icon-container img {
   width: 20px;
   height: 20px;
@@ -58,9 +56,6 @@ body {
 }
 
 
-/* ============================= */
-/* FOOTER (CONTACT SECTION) */
-/* ============================= */
 .footer {
   border-top: 1px solid rgba(255,255,255,0.1);
   padding: 80px 24px 40px;
@@ -75,7 +70,7 @@ body {
   align-items: flex-start;
 }
 
-/* LEFT */
+
 .footer-left h2 {
   font-size: 32px;
   margin-bottom: 16px;
@@ -96,7 +91,7 @@ body {
   color: #e5e7eb;
 }
 
-/* SOCIAL ICONS DI FOOTER */
+
 .footer-socials {
   display: flex;
   gap: 16px;
@@ -125,7 +120,7 @@ body {
   box-shadow: 0 0 16px rgba(168,85,247,0.6);
 }
 
-/* RIGHT CARD */
+
 .footer-right {
   background: #141414;
   border: 1px solid rgba(255,255,255,0.1);
