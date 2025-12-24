@@ -1,7 +1,3 @@
-/* ============================= */
-/* PROJECT PAGE */
-/* ============================= */
-
 .project-page {
   padding: 120px 24px 140px;
   max-width: 1200px;
@@ -23,14 +19,14 @@
   margin: 0 auto 80px;
 }
 
-/* GRID */
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 36px;
 }
 
-/* CARD — INI YANG BIKIN SAMA */
+
 .project-card {
   position: relative;
   height: 180px;
@@ -39,15 +35,15 @@
   background: #e5e5e5;
 }
 
-/* GAMBAR */
+
 .project-card img {
   width: 100%;
   height: 100%;
-  object-fit: cover;      /* ⬅️ ini bikin rapi */
+  object-fit: cover;      
   transition: transform 0.4s ease;
 }
 
-/* GRID */
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -75,7 +71,6 @@
 }
 
 
-/* TEKS OVERLAY */
 .project-overlay {
   position: absolute;
   left: 0;
@@ -102,15 +97,11 @@
   margin-top: 2px;
 }
 
-/* HOVER */
+
 .project-card:hover img {
   transform: scale(1.06);
 }
 
-
-/* ============================= */
-/* GLOBAL PURPLE GRID BACKGROUND */
-/* ============================= */
 
 .global-grid::before {
   content: "";
@@ -157,14 +148,10 @@
 }
 
 
-
 html, body {
   height: 100%;
 }
 
-
-
-/* NAVBAR FINAL */
 nav {
   background: linear-gradient(
     to bottom,
@@ -208,8 +195,6 @@ nav a:hover {
   color: #a78bfa;
 }
 
-
-/* RESPONSIVE */
 @media (max-width: 900px) {
   .project-grid {
     grid-template-columns: 1fr;
@@ -223,10 +208,6 @@ nav a:hover {
     font-size: 32px;
   }
 }
-
-/* ============================= */
-/* FOOTER */
-/* ============================= */
 
 .contact-footer {
   padding: 120px 24px;

@@ -158,16 +158,13 @@ body {
   font-size: 14px;
 }
 
-/* ============================= */
-/* RESPONSIVE (MOBILE) */
-/* ============================= */
 @media (max-width: 768px) {
 
   .contact-icon-bar {
     margin-top: 80px;
   }
 
-  /* UBAH JADI GRID 2x2 */
+  
   .icon-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

@@ -1,5 +1,3 @@
-/* ================= EXPERIENCE ================= */
-
 .experience {
   max-width: 1100px;
   margin: 100px auto;
@@ -20,25 +18,21 @@
   margin-bottom: 80px;
 }
 
-/* LIST */
 .exp-list {
   display: flex;
   flex-direction: column;
   gap: 80px;
 }
 
-/* ITEM */
 .exp-item {
   display: flex;
   align-items: center;
   gap: 32px;
 }
 
-/* IMAGE BOX */
-/* IMAGE BOX */
 .exp-img {
   width: 260px;
-  aspect-ratio: 16 / 10;   /* 🔥 kunci sertifikat landscape */
+  aspect-ratio: 16 / 10;   
   background: #141414;
   border-radius: 18px;
   overflow: hidden;
@@ -48,11 +42,11 @@
   box-shadow: 0 0 35px rgba(168, 85, 247, 0.35);
 }
 
-/* IMAGE */
+
 .exp-img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;      /* 🔥 BIAR PENUH & DOMINAN */
+  object-fit: cover;      
   display: block;
 }
 
@@ -70,7 +64,7 @@
   max-width: 520px;
 }
 
-/* ========== MOBILE MODE ========== */
+
 @media (max-width: 768px) {
 
   .experience h1 {
@@ -78,7 +72,7 @@
   }
 
   .exp-item {
-    flex-direction: column; /* 🔥 KUNCI UTAMA */
+    flex-direction: column; 
     text-align: center;
   }
 
@@ -138,7 +132,7 @@ nav {
 }
 
 nav a {
-  color: #f9fafb;      /* PUTIH CERAH */
+  color: #f9fafb;      
   font-weight: 500;
 }
 
@@ -183,7 +177,7 @@ nav .contact-btn {
   z-index: 1;
 }
 
-/* Supaya konten di atas grid */
+
 .experience > *:not(.grid-bg) {
   position: relative;
   z-index: 1;
