@@ -141,17 +141,26 @@
   }
 }
 
-body {
-  background: #0b0b0b;
-  color: #fff;
-  animation: fadeIn 1s ease;
+.skills-grid {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 48px;
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+  place-items: center;
+
+  animation: fadeUp 0.8s ease;
 }
 
-@keyframes fadeIn {
+@keyframes fadeUp {
   from {
     opacity: 0;
+    transform: translateY(30px);
   }
   to {
     opacity: 1;
+    transform: translateY(0);
   }
 }
