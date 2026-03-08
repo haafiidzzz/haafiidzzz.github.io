@@ -18,3 +18,8 @@ elements.forEach(el => {
   observer.observe(el);
 });
 
+document.querySelectorAll("#mobile-menu a").forEach(link => {
+  link.addEventListener("click", () => {
+    menu.classList.add("hidden");
+  });
+});

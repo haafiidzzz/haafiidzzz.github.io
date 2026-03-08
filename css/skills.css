@@ -26,16 +26,6 @@
   pointer-events: none;
 }
 
-.skills-grid {
-  margin-top: 80px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); 
-  gap: 48px;
-  max-width: 520px;
-  margin-left: auto;
-  margin-right: auto;
-  place-items: center;
-}
 
 .skills-grid img {
   width: 64px;
@@ -150,7 +140,6 @@
   margin-left: auto;
   margin-right: auto;
   place-items: center;
-
   animation: fadeUp 0.8s ease;
 }
 
