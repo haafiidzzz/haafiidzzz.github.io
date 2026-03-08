@@ -32,26 +32,22 @@
 
 .exp-img {
   width: 260px;
-  aspect-ratio: 16 / 10;   
+  aspect-ratio: 16 / 10;
   background: #141414;
   border-radius: 18px;
   overflow: hidden;
   flex-shrink: 0;
-
   border: 1px solid rgba(255,255,255,0.08);
   box-shadow: 0 0 35px rgba(168, 85, 247, 0.35);
 }
 
-
 .exp-img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;      
+  object-fit: cover;
   display: block;
 }
 
-
-/* TEXT */
 .exp-text h3 {
   font-size: 22px;
   font-weight: 600;
@@ -64,61 +60,27 @@
   max-width: 520px;
 }
 
-
-@media (max-width: 768px) {
-
-  .experience h1 {
-    font-size: 28px;
-  }
-
-  .exp-item {
-    flex-direction: column; 
-    text-align: center;
-  }
-
-  .exp-img {
-    width: 200px;
-    height: 150px;
-  }
-
-  .exp-text p {
-    max-width: 100%;
-  }
-}
-
-
+/* GLOBAL GRID BACKGROUND */
 .global-grid {
   position: fixed;
   inset: 0;
   z-index: 0;
   pointer-events: none;
-
   background:
-    radial-gradient(
-      ellipse at top center,
-      rgba(124, 58, 237, 0.22),
-      transparent 70%
-    ),
-    linear-gradient(
-      to right,
-      rgba(124, 58, 237, 0.12) 1px,
-      transparent 1px
-    ),
-    linear-gradient(
-      to bottom,
-      rgba(124, 58, 237, 0.12) 1px,
-      transparent 1px
-    );
-
-  background-size:
-    100% 100%,
-    48px 48px,
-    48px 48px;
+    radial-gradient(ellipse at top center, rgba(124, 58, 237, 0.22), transparent 70%),
+    linear-gradient(to right, rgba(124, 58, 237, 0.12) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(124, 58, 237, 0.12) 1px, transparent 1px);
+  background-size: 100% 100%, 48px 48px, 48px 48px;
 }
 
-nav,
+/* FIXED: Removed nav/section/footer z-index override that was breaking mobile menu */
 section,
 footer {
+  position: relative;
+  z-index: 1;
+}
+
+.experience > *:not(.grid-bg) {
   position: relative;
   z-index: 1;
 }
@@ -127,12 +89,8 @@ html, body {
   height: 100%;
 }
 
-nav {
-  background: transparent;
-}
-
 nav a {
-  color: #f9fafb;      
+  color: #f9fafb;
   font-weight: 500;
 }
 
@@ -147,48 +105,31 @@ nav a:hover {
     0 0 20px rgba(124, 58, 237, 0.25);
 }
 
-/* CTA */
 nav .btn-nav,
 nav .contact-btn {
-  background: linear-gradient(
-    135deg,
-    #a855f7,
-    #7c3aed
-  );
+  background: linear-gradient(135deg, #a855f7, #7c3aed);
   color: #fff;
   box-shadow: 0 8px 24px rgba(124, 58, 237, 0.45);
 }
 
-
-.footer::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(124, 58, 237, 0.15),
-    rgba(0, 0, 0, 0.85)
-  );
-  z-index: 0;
-}
-
-.footer > * {
-  position: relative;
-  z-index: 1;
-}
-
-
-.experience > *:not(.grid-bg) {
-  position: relative;
-  z-index: 1;
-}
-
-
+/* RESPONSIVE */
 @media (max-width: 768px) {
+  .experience h1 {
+    font-size: 28px;
+  }
+
+  .exp-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
   .exp-img {
     width: 100%;
     max-width: 320px;
     margin: 0 auto;
   }
-}
 
+  .exp-text p {
+    max-width: 100%;
+  }
+}
