@@ -11,6 +11,8 @@
   <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
+
+  
   <script>
     tailwind.config = {
       theme: {
@@ -22,17 +24,45 @@
   </script>
 </head>
 
+<script>
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('opacity-100', 'translate-y-0');
+      }
+    });
+  });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const btn = document.getElementById("menu-btn");
+    const menu = document.getElementById("mobile-menu");
+
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("opacity-0");
+      menu.classList.toggle("pointer-events-none");
+      menu.classList.toggle("-translate-y-4");
+    });
+  });
+</script>
+
+
 <body class="bg-[#0b0b0b] text-white font-poppins overflow-x-hidden">
 
+
 <!-- NAVBAR -->
-<nav class="relative w-full backdrop-blur bg-black/60 border-b border-white/5">
+ <!-- NAVBAR -->
+  <nav class="relative w-full backdrop-blur bg-black/60 border-b border-white/5">
   <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
     <h1 class="text-xl font-bold text-purple-500">
       Mas<span class="text-purple-300">Hafidz</span>
     </h1>
 
     <ul class="hidden md:flex gap-8 text-gray-300">
-      <li><a href="index.html" class="text-purple-400">Home</a></li>
+      <li><a href="index.html" class="hover:text-purple-400">Home</a></li>
       <li><a href="project.html" class="hover:text-purple-400">Project</a></li>
       <li><a href="experience.html" class="hover:text-purple-400">Experience</a></li>
       <li><a href="skills.html" class="hover:text-purple-400">Skills</a></li>
@@ -43,22 +73,21 @@
         </a>
       </li>
     </ul>
-
     <!-- HAMBURGER BUTTON (MOBILE) -->
-    <button id="menu-btn" class="md:hidden text-white focus:outline-none">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none"
-           viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"/>
-      </svg>
-    </button>
+<button id="menu-btn" class="md:hidden text-white focus:outline-none">
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none"
+       viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"/>
+  </svg>
+</button>
 
   </div>
 </nav>
 
-<!-- MOBILE MENU -->
+<!-- MOBILE MENU (OVERLAY) -->
 <div id="mobile-menu"
-     class="fixed top-[64px] left-0 w-full
+     class="fixed top-[72px] left-0 w-full
             bg-black/95 backdrop-blur
             border-t border-white/5
             md:hidden
@@ -81,6 +110,10 @@
   </ul>
 </div>
 
+
+
+<!-- (PASTE NAVBAR DI SINI) -->
+
 <!-- HERO -->
 <section class="pt-36 max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
   <div class="space-y-6 animate-fade-up">
@@ -93,7 +126,7 @@
     <p class="text-purple-400">Computer Engineering Student</p>
 
     <p class="text-gray-400 leading-relaxed">
-      I'm a student who has a strong interest in technology and enjoys exploring coding and digital development.
+      I’m a student who has a strong interest in technology and enjoys exploring coding and digital development.
     </p>
 
     <div class="flex gap-4">
@@ -104,22 +137,23 @@
     </div>
   </div>
 
-  <div class="flex justify-center animate-fade-up">
-    <img src="assets/icon/Desain tanpa judul.png" alt="Hero Image"
-         class="w-74 drop-shadow-[0_0_40px_rgba(124,58,237,0.35)]">
-  </div>
+<div class="flex justify-center animate-fade-up">
+  <img src="assets/icon/Desain tanpa judul.png" alt="Hero Image"
+       class="w-74 drop-shadow-[0_0_40px_rgba(124,58,237,0.35)]">
+</div>
+
+
 </section>
 
 <!-- ABOUT -->
-<section class="relative bg-[#0b0b0b] overflow-hidden">
-  <!-- PURPLE AMBIENT GLOW -->
-  <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
-              w-[700px] h-[700px]
-              bg-purple-500/20
-              blur-[180px]
-              rounded-full
-              pointer-events-none">
-  </div>
+<section class="relative bg-[#0b0b0b] overflow-hidden"><!-- PURPLE AMBIENT GLOW -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+            w-[700px] h-[700px]
+            bg-purple-500/20
+            blur-[180px]
+            rounded-full
+            pointer-events-none">
+</div>
 
   <div class="max-w-7xl mx-auto px-6 pt-48 pb-32 text-center">
 
@@ -129,28 +163,59 @@
 
     <h2 class="text-4xl md:text-5xl font-semibold leading-tight mb-5">
       Currently, I am learning about <br>
-      web development and exploring <br>
-      various subjects related to my major.
+web development and exploring <br>
+various subjects related to my major.
+
+
     </h2>
 
     <p class="text-gray-400 max-w-3xl mx-auto leading-relaxed">
       Besides that, I have skills in photo and video editing, and I am actively involved in outdoor activities such as hiking as well as various sports.
+
     </p>
 
-    <!-- ICON ROW -->
-    <div class="mt-16 flex flex-wrap justify-center gap-12 max-w-4xl mx-auto">
-      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/html5.svg" alt="HTML"
-           class="w-14 h-14 invert opacity-80 hover:opacity-100 hover:scale-110 transition hover:drop-shadow-[0_0_15px_rgba(124,58,237,0.6)]">
-      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/css3.svg" alt="CSS"
-           class="w-14 h-14 invert opacity-80 hover:opacity-100 hover:scale-110 transition hover:drop-shadow-[0_0_15px_rgba(124,58,237,0.6)]">
-      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/javascript.svg" alt="JavaScript"
-           class="w-14 h-14 invert opacity-80 hover:opacity-100 hover:scale-110 transition hover:drop-shadow-[0_0_15px_rgba(124,58,237,0.6)]">
-      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/tailwindcss.svg" alt="Tailwind CSS"
-           class="w-14 h-14 invert opacity-80 hover:opacity-100 hover:scale-110 transition hover:drop-shadow-[0_0_15px_rgba(124,58,237,0.6)]">
-    </div>
+<!-- ICON ROW (NO BOX) -->
+<div class="mt-16 flex flex-wrap justify-center gap-12 max-w-4xl mx-auto">
 
+      <img
+      src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/html5.svg"
+      alt="HTML"
+      class="w-14 h-14 invert opacity-80
+             hover:opacity-100 hover:scale-110 transition
+             hover:drop-shadow-[0_0_15px_rgba(124,58,237,0.6)]">
+
+
+          <img
+      src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/css3.svg"
+      alt="CSS"
+      class="w-14 h-14 invert opacity-80
+             hover:opacity-100 hover:scale-110 transition
+             hover:drop-shadow-[0_0_15px_rgba(124,58,237,0.6)]">
+
+          <img
+      src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/javascript.svg"
+      alt="JavaScript"
+      class="w-14 h-14 invert opacity-80
+             hover:opacity-100 hover:scale-110 transition
+             hover:drop-shadow-[0_0_15px_rgba(124,58,237,0.6)]">
+
+           <img
+  src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/tailwindcss.svg"
+  alt="Tailwind CSS"
+  class="w-14 h-14 invert opacity-80
+         hover:opacity-100 hover:scale-110 transition
+         hover:drop-shadow-[0_0_15px_rgba(124,58,237,0.6)]">
+
+
+</div>
+
+
+
+</div>
   </div>
 </section>
+
+
 
 <!-- EDUCATION TIMELINE -->
 <section class="mt-40 max-w-7xl mx-auto px-6">
@@ -175,10 +240,12 @@
       </p>
     </div>
 
+    
+
     <!-- RIGHT -->
     <div class="relative pl-10 space-y-12">
 
-      <!-- LINE -->
+      <!-- LINE (FIXED) -->
       <div class="absolute left-2 inset-y-0 w-[2px] bg-gradient-to-b from-purple-500/50 to-transparent"></div>
 
       <!-- ITEM -->
@@ -221,6 +288,8 @@
   </div>
 </section>
 
+
+
 <!-- FOOTER -->
 <footer class="mt-40 bg-[#0b0b0b] border-t border-white/10">
   <div class="max-w-7xl mx-auto px-6 py-16">
@@ -255,33 +324,60 @@
 
         <!-- SOCIAL ICONS -->
         <div class="flex gap-4">
+
+          <!-- IG -->
           <a href="https://instagram.com/haafiidzzzz" target="_blank"
-             class="w-10 h-10 flex items-center justify-center rounded-full border border-white/10 hover:border-purple-500 transition hover:shadow-[0_0_20px_rgba(124,58,237,0.6)]">
-            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/instagram.svg"
-                 class="w-5 h-5 invert opacity-80 hover:opacity-100 transition" alt="Instagram">
+             class="w-10 h-10 flex items-center justify-center
+                    rounded-full border border-white/10
+                    hover:border-purple-500
+                    transition
+                    hover:shadow-[0_0_20px_rgba(124,58,237,0.6)]">
+            <img
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/instagram.svg"
+              class="w-5 h-5 invert opacity-80 hover:opacity-100 transition"
+              alt="Instagram">
           </a>
+
+          <!-- WHATSAPP -->
           <a href="https://wa.me/6281225093482" target="_blank"
-             class="w-10 h-10 flex items-center justify-center rounded-full border border-white/10 hover:border-purple-500 transition hover:shadow-[0_0_20px_rgba(124,58,237,0.6)]">
-            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/whatsapp.svg"
-                 class="w-5 h-5 invert opacity-80 hover:opacity-100 transition" alt="WhatsApp">
+             class="w-10 h-10 flex items-center justify-center
+                    rounded-full border border-white/10
+                    hover:border-purple-500
+                    transition
+                    hover:shadow-[0_0_20px_rgba(124,58,237,0.6)]">
+            <img
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/whatsapp.svg"
+              class="w-5 h-5 invert opacity-80 hover:opacity-100 transition"
+              alt="WhatsApp">
           </a>
-          <a href="https://facebook.com/Hafidz%20Ulum%20Ramadhani" target="_blank"
-             class="w-10 h-10 flex items-center justify-center rounded-full border border-white/10 hover:border-purple-500 transition hover:shadow-[0_0_20px_rgba(124,58,237,0.6)]">
-            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/facebook.svg"
-                 class="w-5 h-5 invert opacity-80 hover:opacity-100 transition" alt="Facebook">
+
+          <!-- FACEBOOK -->
+          <a href="https://facebook.com/Hafidz Ulum Ramadhani" target="_blank"
+             class="w-10 h-10 flex items-center justify-center
+                    rounded-full border border-white/10
+                    hover:border-purple-500
+                    transition
+                    hover:shadow-[0_0_20px_rgba(124,58,237,0.6)]">
+            <img
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/facebook.svg"
+              class="w-5 h-5 invert opacity-80 hover:opacity-100 transition"
+              alt="Facebook">
           </a>
+
         </div>
       </div>
 
       <!-- RIGHT -->
       <div class="flex md:justify-end">
         <div class="bg-[#141414] border border-white/10 rounded-2xl p-8 w-full md:w-[360px]">
-          <h3 class="font-semibold mb-4">Let's Work Together</h3>
+          <h3 class="font-semibold mb-4">Let’s Work Together</h3>
           <p class="text-gray-400 text-sm mb-6">
-            Open for freelance, creative projects, and collaborations.
+            Open for freelance, creative projects,
+            and collaborations.
           </p>
           <a href="mailto:ulumramadhani5@gmail.com"
-             class="inline-block px-6 py-3 bg-purple-600 rounded-lg hover:bg-purple-700 transition">
+             class="inline-block px-6 py-3 bg-purple-600 rounded-lg
+                    hover:bg-purple-700 transition">
             Email Me
           </a>
         </div>
@@ -295,33 +391,3 @@
 
   </div>
 </footer>
-
-<!-- SCRIPTS (FIXED - all scripts moved to bottom of body so DOM is ready) -->
-<script>
-  // Mobile menu toggle
-  const btn = document.getElementById("menu-btn");
-  const menu = document.getElementById("mobile-menu");
-
-  btn.addEventListener("click", () => {
-    menu.classList.toggle("opacity-0");
-    menu.classList.toggle("pointer-events-none");
-    menu.classList.toggle("-translate-y-4");
-  });
-
-  // Scroll animation (FIXED - was in <head> before, DOM wasn't ready)
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('opacity-100', 'translate-y-0');
-      }
-    });
-  });
-
-  document.querySelectorAll('.animate-fade-up').forEach(el => {
-    el.classList.add('opacity-0', 'translate-y-10', 'transition-all', 'duration-700');
-    observer.observe(el);
-  });
-</script>
-
-</body>
-</html>
