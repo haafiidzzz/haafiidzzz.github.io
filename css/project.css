@@ -247,7 +247,7 @@ nav a:hover {
   color: #d1d5db;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .contact-footer-inner {
     grid-template-columns: 1fr;
   }

@@ -111,23 +111,13 @@
 }
 
 
-@media (max-width: 1024px) {
+@media (max-width: 768pxpx) {
   .skills-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 
   .page-header::before {
     font-size: 80px;
-  }
-}
-
-@media (max-width: 640px) {
-  .skills-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .page-header h1 {
-    font-size: 28px;
   }
 }
 
