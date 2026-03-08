@@ -32,7 +32,7 @@
 <body class="bg-[#0b0b0b] text-white font-poppins overflow-x-hidden">
 <div class="global-grid"></div>
 
-  <nav class="w-full relative z-50 backdrop-blur">
+  <nav class="relative w-full backdrop-blur bg-black/60 border-b border-white/5"></nav>
   <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
     <!-- LOGO -->
@@ -68,8 +68,15 @@
 
 
 <!-- MOBILE MENU -->
-<div id="mobile-menu"
-     class="hidden fixed top-[80px] left-0 w-full bg-black/95 backdrop-blur border-t border-white/5 z-40">
+ <div id="mobile-menu"
+class="fixed top-[64px] left-0 w-full
+bg-black/95 backdrop-blur
+border-t border-white/5
+md:hidden
+opacity-0 pointer-events-none
+-translate-y-4
+transition-all duration-300 ease-out
+z-50">
   <ul class="flex flex-col gap-6 px-6 py-8 text-gray-300">
     <li><a href="index.html">Home</a></li>
     <li><a href="project.html" class="text-purple-400">Project</a></li>
