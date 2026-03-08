@@ -140,3 +140,18 @@
     font-size: 28px;
   }
 }
+
+body {
+  background: #0b0b0b;
+  color: #fff;
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
