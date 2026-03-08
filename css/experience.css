@@ -133,3 +133,32 @@ nav .contact-btn {
     max-width: 100%;
   }
 }
+
+.exp-item {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.exp-item:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.exp-item:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
