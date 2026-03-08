@@ -3,49 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <title>Contact</title>
+  <link rel="icon" type="image/png" href="assets/icon/1.webp"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/contact.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <script>
-      tailwind.config = {
-        theme: {
-          fontFamily: {
-            poppins: ['Poppins', 'sans-serif'],
-          }
+    tailwind.config = {
+      theme: {
+        fontFamily: {
+          poppins: ['Poppins', 'sans-serif'],
         }
       }
-    </script>
+    }
+  </script>
 </head>
 
 <body class="bg-[#0b0b0b] text-white font-poppins overflow-x-hidden">
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const btn = document.getElementById("menu-btn");
-      const menu = document.getElementById("mobile-menu");
 
-      if (btn && menu) {
-        btn.addEventListener("click", () => {
-          menu.classList.toggle("hidden");
-        });
-      }
-    });
-  </script>
-
-
-
-
-
- <nav class="w-full md:sticky md:top-0 z-50 backdrop-blur bg-black/60 border-b border-white/5">
+<nav class="w-full md:sticky md:top-0 z-50 backdrop-blur bg-black/60 border-b border-white/5">
   <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
-    
     <h1 class="text-xl font-bold text-purple-500">
       Mas<span class="text-purple-300">Hafidz</span>
     </h1>
 
-    
     <ul class="hidden md:flex gap-8 text-gray-300">
       <li><a href="index.html" class="hover:text-purple-400">Home</a></li>
       <li><a href="project.html" class="hover:text-purple-400">Project</a></li>
@@ -71,15 +54,15 @@
   </div>
 </nav>
 
-<!-- MOBILE MENU -->
+<!-- MOBILE MENU (FIXED - removed md:fixed, now uses plain fixed so it works on mobile) -->
 <div id="mobile-menu"
-     class="hidden md:fixed md:top-[72px] left-0 w-full bg-black/95 backdrop-blur border-t border-white/5 z-40">
+     class="hidden fixed top-[64px] left-0 w-full bg-black/95 backdrop-blur border-t border-white/5 z-40">
 
   <ul class="flex flex-col gap-6 px-6 py-8 text-gray-300">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="project.html">Project</a></li>
-    <li><a href="experience.html">Experience</a></li>
-    <li><a href="skills.html">Skills</a></li>
+    <li><a href="index.html" class="hover:text-purple-400">Home</a></li>
+    <li><a href="project.html" class="hover:text-purple-400">Project</a></li>
+    <li><a href="experience.html" class="hover:text-purple-400">Experience</a></li>
+    <li><a href="skills.html" class="hover:text-purple-400">Skills</a></li>
     <li>
       <a href="contact.html"
          class="block text-center px-4 py-2 bg-purple-600 rounded-lg text-white">
@@ -89,26 +72,22 @@
   </ul>
 </div>
 
-
 <section class="contact-icon-bar">
   <div class="icon-container">
     <a href="mailto:ulumramadhani5@gmail.com">
-      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/gmail.svg">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/gmail.svg" alt="Gmail">
     </a>
     <a href="https://instagram.com/haafiidzzzz" target="_blank">
-      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/instagram.svg">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/instagram.svg" alt="Instagram">
     </a>
-    <a href="https://facebook.com/Hafidz Ulum Ramadhani" target="_blank">
-      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/facebook.svg">
+    <a href="https://facebook.com/Hafidz%20Ulum%20Ramadhani" target="_blank">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/facebook.svg" alt="Facebook">
     </a>
-    <a href="https://linkedin.com/in/www.linkedin.com/in/
-hafidz-ulum-ramadhani-377540306
-" target="_blank">
-      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/linkedin.svg">
+    <a href="https://linkedin.com/in/hafidz-ulum-ramadhani-377540306" target="_blank">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/linkedin.svg" alt="LinkedIn">
     </a>
-    <a href="https://github.com/haafiidzzz" target="_blank"
-       aria-label="GitHub">
-      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg">
+    <a href="https://github.com/haafiidzzz" target="_blank">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg" alt="GitHub">
     </a>
   </div>
 </section>
@@ -146,60 +125,33 @@ hafidz-ulum-ramadhani-377540306
 
         <!-- SOCIAL ICONS -->
         <div class="flex gap-4">
-
-          <!-- IG -->
           <a href="https://instagram.com/haafiidzzzz" target="_blank"
-             class="w-10 h-10 flex items-center justify-center
-                    rounded-full border border-white/10
-                    hover:border-purple-500
-                    transition
-                    hover:shadow-[0_0_20px_rgba(124,58,237,0.6)]">
-            <img
-              src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/instagram.svg"
-              class="w-5 h-5 invert opacity-80 hover:opacity-100 transition"
-              alt="Instagram">
+             class="w-10 h-10 flex items-center justify-center rounded-full border border-white/10 hover:border-purple-500 transition hover:shadow-[0_0_20px_rgba(124,58,237,0.6)]">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/instagram.svg"
+                 class="w-5 h-5 invert opacity-80 hover:opacity-100 transition" alt="Instagram">
           </a>
-
-          <!-- WHATSAPP -->
           <a href="https://wa.me/6281225093482" target="_blank"
-             class="w-10 h-10 flex items-center justify-center
-                    rounded-full border border-white/10
-                    hover:border-purple-500
-                    transition
-                    hover:shadow-[0_0_20px_rgba(124,58,237,0.6)]">
-            <img
-              src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/whatsapp.svg"
-              class="w-5 h-5 invert opacity-80 hover:opacity-100 transition"
-              alt="WhatsApp">
+             class="w-10 h-10 flex items-center justify-center rounded-full border border-white/10 hover:border-purple-500 transition hover:shadow-[0_0_20px_rgba(124,58,237,0.6)]">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/whatsapp.svg"
+                 class="w-5 h-5 invert opacity-80 hover:opacity-100 transition" alt="WhatsApp">
           </a>
-
-          <!-- FACEBOOK -->
-          <a href="https://facebook.com/Hafidz Ulum Ramadhani" target="_blank"
-             class="w-10 h-10 flex items-center justify-center
-                    rounded-full border border-white/10
-                    hover:border-purple-500
-                    transition
-                    hover:shadow-[0_0_20px_rgba(124,58,237,0.6)]">
-            <img
-              src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/facebook.svg"
-              class="w-5 h-5 invert opacity-80 hover:opacity-100 transition"
-              alt="Facebook">
+          <a href="https://facebook.com/Hafidz%20Ulum%20Ramadhani" target="_blank"
+             class="w-10 h-10 flex items-center justify-center rounded-full border border-white/10 hover:border-purple-500 transition hover:shadow-[0_0_20px_rgba(124,58,237,0.6)]">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/facebook.svg"
+                 class="w-5 h-5 invert opacity-80 hover:opacity-100 transition" alt="Facebook">
           </a>
-
         </div>
       </div>
 
       <!-- RIGHT -->
       <div class="flex md:justify-end">
         <div class="bg-[#141414] border border-white/10 rounded-2xl p-8 w-full md:w-[360px]">
-          <h3 class="font-semibold mb-4">Let’s Work Together</h3>
+          <h3 class="font-semibold mb-4">Let's Work Together</h3>
           <p class="text-gray-400 text-sm mb-6">
-            Open for freelance, creative projects,
-            and collaborations.
+            Open for freelance, creative projects, and collaborations.
           </p>
           <a href="mailto:ulumramadhani5@gmail.com"
-             class="inline-block px-6 py-3 bg-purple-600 rounded-lg
-                    hover:bg-purple-700 transition">
+             class="inline-block px-6 py-3 bg-purple-600 rounded-lg hover:bg-purple-700 transition">
             Email Me
           </a>
         </div>
@@ -213,3 +165,16 @@ hafidz-ulum-ramadhani-377540306
 
   </div>
 </footer>
+
+<!-- SCRIPT (FIXED - moved to bottom of body) -->
+<script>
+  const btn = document.getElementById("menu-btn");
+  const menu = document.getElementById("mobile-menu");
+
+  btn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
+</script>
+
+</body>
+</html>

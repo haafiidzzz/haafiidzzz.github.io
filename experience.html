@@ -31,8 +31,8 @@
 <body class="bg-[#0b0b0b] text-white font-poppins overflow-x-hidden">
 <div class="global-grid"></div>
 
-<!-- NAVBAR -->
-<nav class="w-full backdrop-blur bg-black/60 border-b border-white/5"></nav>
+<!-- NAVBAR (FIXED - closing tag was wrong + body was closed too early) -->
+<nav class="w-full backdrop-blur bg-black/60 border-b border-white/5">
   <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
     <!-- LOGO -->
@@ -68,7 +68,7 @@
 
 <!-- MOBILE MENU -->
 <div id="mobile-menu"
-     class="hidden fixed top-[80px] left-0 w-full bg-black/95 backdrop-blur border-t border-white/5 z-40">
+     class="hidden fixed top-[64px] left-0 w-full bg-black/95 backdrop-blur border-t border-white/5 z-40">
 
   <ul class="flex flex-col gap-6 px-6 py-8 text-gray-300">
     <li><a href="index.html" class="hover:text-purple-400">Home</a></li>
@@ -84,21 +84,6 @@
   </ul>
 </div>
 
-
-<!-- SCRIPT -->
-<script>
-  const btn = document.getElementById("menu-btn");
-  const menu = document.getElementById("mobile-menu");
-
-  btn.addEventListener("click", () => {
-    menu.classList.toggle("hidden");
-  });
-</script>
-
-</body>
-</html>
-
-
 <!-- EXPERIENCE / WHAT DO I OFFER -->
 <section class="experience relative overflow-hidden">
   <div class="grid-bg"></div>
@@ -113,61 +98,58 @@
 
     <div class="exp-item">
       <div class="exp-img">
-  <img src="assets/icon/1735628896062.jpg" alt="Experience 1">
-</div>
-
+        <img src="assets/icon/1735628896062.jpg" alt="Experience 1">
+      </div>
       <div class="exp-text">
         <h3>Latihan Keterampilan Mahasiswa Wirausaha</h3>
         <p>
-Participated in training focused on developing entrepreneurial
-management skills, including business planning, leadership,
-decision-making, and teamwork.
+          Participated in training focused on developing entrepreneurial
+          management skills, including business planning, leadership,
+          decision-making, and teamwork.
         </p>
       </div>
     </div>
 
     <div class="exp-item">
       <div class="exp-img">
-  <img src="assets/icon/1739562096640.jpg" alt="Experience 1">
-</div>
+        <img src="assets/icon/1739562096640.jpg" alt="Experience 2">
+      </div>
       <div class="exp-text">
         <h3>Latihan Keterampilan Mahasiswa Manajerial</h3>
         <p>
-Participated in a training program focused on developing
-foundational managerial skills for students, including leadership,
-communication, teamwork, and basic organizational management.
-
+          Participated in a training program focused on developing
+          foundational managerial skills for students, including leadership,
+          communication, teamwork, and basic organizational management.
         </p>
       </div>
     </div>
 
     <div class="exp-item">
-      <div class="exp-img"> <img src="assets/icon/Completion Certificate for Intro to UI_UX (1).svg" alt="Experience 1"></div>
+      <div class="exp-img">
+        <img src="assets/icon/Completion Certificate for Intro to UI_UX (1).svg" alt="Experience 3">
+      </div>
       <div class="exp-text">
         <h3>Completion Course Intro to UI/UX</h3>
         <p>
           Completed an Intro to UI/UX course that introduced fundamental
-concepts of user interface and user experience design, including
-layout composition, color usage, and basic design system practices.
-
+          concepts of user interface and user experience design, including
+          layout composition, color usage, and basic design system practices.
         </p>
       </div>
     </div>
 
     <div class="exp-item">
       <div class="exp-img">
-  <img src="assets/icon/W.jpg" alt="Experience 1">
-</div>
-
+        <img src="assets/icon/W.jpg" alt="Experience 4">
+      </div>
       <div class="exp-text">
         <h3>Hiking in Mount Buthak</h3>
         <p>
           Successfully hiked Mount Buthak, demonstrating physical endurance,
-mental resilience, and teamwork skills in navigating challenging
+          mental resilience, and teamwork skills in navigating challenging terrain.
         </p>
       </div>
     </div>
-
 
   </div>
 </section>
@@ -206,60 +188,33 @@ mental resilience, and teamwork skills in navigating challenging
 
         <!-- SOCIAL ICONS -->
         <div class="flex gap-4">
-
-          <!-- IG -->
           <a href="https://instagram.com/haafiidzzzz" target="_blank"
-             class="w-10 h-10 flex items-center justify-center
-                    rounded-full border border-white/10
-                    hover:border-purple-500
-                    transition
-                    hover:shadow-[0_0_20px_rgba(124,58,237,0.6)]">
-            <img
-              src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/instagram.svg"
-              class="w-5 h-5 invert opacity-80 hover:opacity-100 transition"
-              alt="Instagram">
+             class="w-10 h-10 flex items-center justify-center rounded-full border border-white/10 hover:border-purple-500 transition hover:shadow-[0_0_20px_rgba(124,58,237,0.6)]">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/instagram.svg"
+                 class="w-5 h-5 invert opacity-80 hover:opacity-100 transition" alt="Instagram">
           </a>
-
-          <!-- WHATSAPP -->
           <a href="https://wa.me/6281225093482" target="_blank"
-             class="w-10 h-10 flex items-center justify-center
-                    rounded-full border border-white/10
-                    hover:border-purple-500
-                    transition
-                    hover:shadow-[0_0_20px_rgba(124,58,237,0.6)]">
-            <img
-              src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/whatsapp.svg"
-              class="w-5 h-5 invert opacity-80 hover:opacity-100 transition"
-              alt="WhatsApp">
+             class="w-10 h-10 flex items-center justify-center rounded-full border border-white/10 hover:border-purple-500 transition hover:shadow-[0_0_20px_rgba(124,58,237,0.6)]">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/whatsapp.svg"
+                 class="w-5 h-5 invert opacity-80 hover:opacity-100 transition" alt="WhatsApp">
           </a>
-
-          <!-- FACEBOOK -->
-          <a href="https://facebook.com/Hafidz Ulum Ramadhani" target="_blank"
-             class="w-10 h-10 flex items-center justify-center
-                    rounded-full border border-white/10
-                    hover:border-purple-500
-                    transition
-                    hover:shadow-[0_0_20px_rgba(124,58,237,0.6)]">
-            <img
-              src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/facebook.svg"
-              class="w-5 h-5 invert opacity-80 hover:opacity-100 transition"
-              alt="Facebook">
+          <a href="https://facebook.com/Hafidz%20Ulum%20Ramadhani" target="_blank"
+             class="w-10 h-10 flex items-center justify-center rounded-full border border-white/10 hover:border-purple-500 transition hover:shadow-[0_0_20px_rgba(124,58,237,0.6)]">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/facebook.svg"
+                 class="w-5 h-5 invert opacity-80 hover:opacity-100 transition" alt="Facebook">
           </a>
-
         </div>
       </div>
 
       <!-- RIGHT -->
       <div class="flex md:justify-end">
         <div class="bg-[#141414] border border-white/10 rounded-2xl p-8 w-full md:w-[360px]">
-          <h3 class="font-semibold mb-4">Let’s Work Together</h3>
+          <h3 class="font-semibold mb-4">Let's Work Together</h3>
           <p class="text-gray-400 text-sm mb-6">
-            Open for freelance, creative projects,
-            and collaborations.
+            Open for freelance, creative projects, and collaborations.
           </p>
           <a href="mailto:ulumramadhani5@gmail.com"
-             class="inline-block px-6 py-3 bg-purple-600 rounded-lg
-                    hover:bg-purple-700 transition">
+             class="inline-block px-6 py-3 bg-purple-600 rounded-lg hover:bg-purple-700 transition">
             Email Me
           </a>
         </div>
@@ -273,3 +228,16 @@ mental resilience, and teamwork skills in navigating challenging
 
   </div>
 </footer>
+
+<!-- SCRIPT (FIXED - moved here from middle of file) -->
+<script>
+  const btn = document.getElementById("menu-btn");
+  const menu = document.getElementById("mobile-menu");
+
+  btn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
+</script>
+
+</body>
+</html>
