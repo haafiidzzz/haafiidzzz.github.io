@@ -258,12 +258,14 @@ That Have Helped Me Grow
 
 <!-- SCRIPT -->
 <script>
-  const btn = document.getElementById("menu-btn");
-  const menu = document.getElementById("mobile-menu");
+const btn = document.getElementById("menu-btn");
+const menu = document.getElementById("mobile-menu");
 
-  btn.addEventListener("click", () => {
-    menu.classList.toggle("hidden");
-  });
+btn.addEventListener("click", () => {
+  menu.classList.toggle("opacity-0");
+  menu.classList.toggle("pointer-events-none");
+  menu.classList.toggle("-translate-y-4");
+});
 </script>
 
 </body>
