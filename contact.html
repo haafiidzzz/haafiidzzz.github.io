@@ -22,7 +22,7 @@
 
 <body class="bg-[#0b0b0b] text-white font-poppins overflow-x-hidden">
 
-<nav class="w-full md:sticky md:top-0 z-50 backdrop-blur bg-black/60 border-b border-white/5">
+  <nav class="relative w-full backdrop-blur bg-black/60 border-b border-white/5">
   <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
     <h1 class="text-xl font-bold text-purple-500">
@@ -54,9 +54,15 @@
   </div>
 </nav>
 
-<!-- MOBILE MENU (FIXED - removed md:fixed, now uses plain fixed so it works on mobile) -->
 <div id="mobile-menu"
-     class="hidden fixed top-[64px] left-0 w-full bg-black/95 backdrop-blur border-t border-white/5 z-40">
+     class="fixed top-[72px] left-0 w-full
+            bg-black/95 backdrop-blur
+            border-t border-white/5
+            md:hidden
+            opacity-0 pointer-events-none
+            -translate-y-4
+            transition-all duration-300 ease-out
+            z-50">
 
   <ul class="flex flex-col gap-6 px-6 py-8 text-gray-300">
     <li><a href="index.html" class="hover:text-purple-400">Home</a></li>
@@ -168,12 +174,14 @@
 
 <!-- SCRIPT (FIXED - moved to bottom of body) -->
 <script>
-  const btn = document.getElementById("menu-btn");
-  const menu = document.getElementById("mobile-menu");
+const btn = document.getElementById("menu-btn");
+const menu = document.getElementById("mobile-menu");
 
-  btn.addEventListener("click", () => {
-    menu.classList.toggle("hidden");
-  });
+btn.addEventListener("click", () => {
+  menu.classList.toggle("opacity-0");
+  menu.classList.toggle("pointer-events-none");
+  menu.classList.toggle("-translate-y-4");
+});
 </script>
 
 </body>
