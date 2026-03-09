@@ -156,165 +156,24 @@ html, body {
   height: 100%;
 }
 
-.experience {
-  max-width: 1100px;
-  margin: 100px auto;
-  padding: 0 24px;
+nav {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.65),
+    rgba(0, 0, 0, 0.35),
+    rgba(0, 0, 0, 0.15)
+  );
 }
 
-.experience .sub {
-  color: #a855f7;
-  letter-spacing: 2px;
-  font-size: 14px;
-  margin-bottom: 12px;
+nav {
+  background: transparent !important;
+  backdrop-filter: none !important;
+  box-shadow: none !important;
 }
 
-.experience h1 {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.3;
-  margin-bottom: 80px;
-}
-
-.exp-list {
-  display: flex;
-  flex-direction: column;
-  gap: 80px;
-}
-
-
-
-.exp-img {
-  width: 260px;
-  aspect-ratio: 16 / 10;
-  background: #141414;
-  border-radius: 18px;
-  overflow: hidden;
-  flex-shrink: 0;
-  border: 1px solid rgba(255,255,255,0.08);
-  box-shadow: 0 0 35px rgba(168, 85, 247, 0.35);
-}
-
-.exp-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.exp-text h3 {
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 12px;
-}
-
-.exp-text p {
-  color: #9ca3af;
-  line-height: 1.7;
-  max-width: 520px;
-}
-
-/* GLOBAL GRID BACKGROUND */
-.global-grid {
-  position: fixed;
-  inset: 0;
-  z-index: 0;
-  pointer-events: none;
-  background:
-    radial-gradient(ellipse at top center, rgba(124, 58, 237, 0.22), transparent 70%),
-    linear-gradient(to right, rgba(124, 58, 237, 0.12) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(124, 58, 237, 0.12) 1px, transparent 1px);
-  background-size: 100% 100%, 48px 48px, 48px 48px;
-}
-
-/* FIXED: Removed nav/section/footer z-index override that was breaking mobile menu */
-section,
-footer {
-  position: relative;
-  z-index: 1;
-}
-
-.experience > *:not(.grid-bg) {
-  position: relative;
-  z-index: 1;
-}
-
-html, body {
-  height: 100%;
-}
-
-nav a {
-  color: #f9fafb;
-  font-weight: 500;
-}
 
 nav a:hover {
-  color: #c4b5fd;
-}
-
-.logo {
-  color: #d8b4fe;
-  text-shadow:
-    0 0 10px rgba(168, 85, 247, 0.45),
-    0 0 20px rgba(124, 58, 237, 0.25);
-}
-
-nav .btn-nav,
-nav .contact-btn {
-  background: linear-gradient(135deg, #a855f7, #7c3aed);
-  color: #fff;
-  box-shadow: 0 8px 24px rgba(124, 58, 237, 0.45);
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .experience h1 {
-    font-size: 28px;
-  }
-
-  .exp-item {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .exp-img {
-    width: 100%;
-    max-width: 320px;
-    margin: 0 auto;
-  }
-
-  .exp-text p {
-    max-width: 100%;
-  }
-}
-
-.exp-item {
-  display: flex;
-  align-items: center;
-  gap: 32px;
-
-  opacity: 0;
-  transform: translateY(40px);
-  animation: fadeUp 0.8s ease forwards;
-}
-
-.exp-item:nth-child(2) {
-  animation-delay: 0.2s;
-}
-
-.exp-item:nth-child(3) {
-  animation-delay: 0.4s;
-}
-
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  color: #a78bfa;
 }
 
 
