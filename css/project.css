@@ -36,8 +36,9 @@
 }
 
 .project-card img {
-  width: 100%;
-  aspect-ratio: 3 / 4;
+  width: 100% !important;
+  aspect-ratio: 3 / 4 !important;
+  height: auto !important;
   object-fit: cover;
   transition: transform 0.4s ease;
 }
