@@ -121,57 +121,7 @@
   }
 }
 
-.navbar {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  background: rgba(162, 95, 250, 0.59);
-  backdrop-filter: blur(12px);
-  z-index: 1000;
-}
 
-.nav-container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  font-weight: 700;
-  font-size: 22px;
-  color: #7c3aed;
-}
-
-.logo span {
-  color: #a78bfa;
-}
-
-.nav-menu {
-  display: flex;
-  gap: 24px;
-  list-style: none;
-}
-
-.nav-menu a {
-  color: #ccc;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.nav-menu a:hover,
-.nav-menu a.active {
-  color: #7c3aed;
-}
-
-.btn {
-  padding: 8px 16px;
-  background: #7c3aed;
-  border-radius: 6px;
-  color: white !important;
-}
 
 .skills-grid {
   margin-top: 80px;
