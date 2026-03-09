@@ -85,28 +85,32 @@ html, body {
   height: 100%;
 }
 
-nav a {
-  color: #f9fafb;
-  font-weight: 500;
-}
+<nav class="navbar">
+  <div class="nav-container">
 
-nav a:hover {
-  color: #c4b5fd;
-}
+    <!-- LOGO -->
+    <div class="logo">Mas<span>Hafidz</span></div>
 
-.logo {
-  color: #d8b4fe;
-  text-shadow:
-    0 0 10px rgba(168, 85, 247, 0.45),
-    0 0 20px rgba(124, 58, 237, 0.25);
-}
+    <!-- DESKTOP MENU -->
+    <ul class="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="project.html">Project</a></li>
+      <li><a href="experience.html" class="active">Experience</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="contact.html" class="btn">Contact Me</a></li>
+    </ul>
 
-nav .btn-nav,
-nav .contact-btn {
-  background: linear-gradient(135deg, #a855f7, #7c3aed);
-  color: #fff;
-  box-shadow: 0 8px 24px rgba(124, 58, 237, 0.45);
-}
+    <!-- HAMBURGER -->
+    <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none"
+           viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+
+  </div>
+</nav>
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
