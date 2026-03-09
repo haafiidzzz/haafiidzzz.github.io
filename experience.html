@@ -32,23 +32,22 @@
 <div class="global-grid"></div>
 
 <!-- NAVBAR (FIXED - closing tag was wrong + body was closed too early) -->
-<nav class="relative w-full backdrop-blur bg-black/60 border-b border-white/5">
+<nav class="fixed top-0 left-0 w-full z-50" style="background: rgba(8, 4, 18, 0.92); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid rgba(124, 58, 237, 0.15);">
   <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
     <!-- LOGO -->
-    <h1 class="text-xl font-bold text-purple-500">
+    <a href="index.html" class="text-xl font-bold logo">
       Mas<span class="text-purple-300">Hafidz</span>
-    </h1>
+    </a>
 
     <!-- DESKTOP MENU -->
-    <ul class="hidden md:flex gap-8 text-gray-300">
-      <li><a href="index.html" class="hover:text-purple-400">Home</a></li>
-      <li><a href="project.html" class="hover:text-purple-400">Project</a></li>
-      <li><a href="experience.html" class="text-purple-400">Experience</a></li>
-      <li><a href="skills.html" class="hover:text-purple-400">Skills</a></li>
+    <ul class="hidden md:flex gap-8 items-center">
+      <li><a href="index.html" class="text-gray-100 font-medium hover:text-purple-400 transition">Home</a></li>
+      <li><a href="project.html" class="text-gray-100 font-medium hover:text-purple-400 transition">Project</a></li>
+      <li><a href="experience.html" class="text-purple-400 font-medium">Experience</a></li>
+      <li><a href="skills.html" class="text-gray-100 font-medium hover:text-purple-400 transition">Skills</a></li>
       <li>
-        <a href="contact.html"
-           class="px-4 py-2 bg-purple-600 rounded-lg text-white hover:bg-purple-700">
+        <a href="contact.html" class="contact-btn px-5 py-2 text-white font-semibold transition">
           Contact Me
         </a>
       </li>
@@ -65,7 +64,7 @@
 
   </div>
 </nav>
-
+<div class="pt-[72px]"></div>
 <!-- MOBILE MENU -->
  <div id="mobile-menu"
      class="fixed top-[72px] left-0 w-full
