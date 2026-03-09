@@ -20,12 +20,11 @@
 }
 
 .project-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
   margin-top: 60px;
 }
-
 
 .project-card {
   position: relative;
@@ -37,9 +36,8 @@
 }
 
 .project-card img {
-  width: 100% !important;
-  aspect-ratio: 3 / 4 !important;
-  height: auto !important;
+  width: 100%;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
   transition: transform 0.4s ease;
 }
