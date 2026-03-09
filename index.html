@@ -11,6 +11,21 @@
     tailwind.config = { theme: { fontFamily: { poppins: ['Poppins', 'sans-serif'] } } }
   </script>
 </head>
+<script>
+  const elements = document.querySelectorAll('.animate-fade-up');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('opacity-100', 'translate-y-0');
+      }
+    });
+  });
+
+  elements.forEach(el => {
+    el.classList.add('opacity-0', 'translate-y-10', 'transition-all', 'duration-700');
+    observer.observe(el);
+  });
+</script>
 <body class="bg-[#0b0b0b] text-white font-poppins overflow-x-hidden">
 
 <!-- NAVBAR -->
@@ -45,7 +60,7 @@
 </div>
 
 <!-- HERO -->
-<section class="pt-16 max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+ <section class="pt-16 max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center animate-fade-up"></section>
   <div class="space-y-6">
     <p class="text-gray-400">Hello Buds</p>
     <h1 class="text-4xl md:text-5xl font-bold">
