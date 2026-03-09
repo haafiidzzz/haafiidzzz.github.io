@@ -69,6 +69,7 @@
   background-size: 100% 100%, 48px 48px, 48px 48px;
 }
 
+/* FIXED: Removed nav/section/footer z-index override that was breaking mobile menu */
 section,
 footer {
   position: relative;
@@ -84,7 +85,28 @@ html, body {
   height: 100%;
 }
 
+nav a {
+  color: #f9fafb;
+  font-weight: 500;
+}
 
+nav a:hover {
+  color: #c4b5fd;
+}
+
+.logo {
+  color: #d8b4fe;
+  text-shadow:
+    0 0 10px rgba(168, 85, 247, 0.45),
+    0 0 20px rgba(124, 58, 237, 0.25);
+}
+
+nav .btn-nav,
+nav .contact-btn {
+  background: linear-gradient(135deg, #a855f7, #7c3aed);
+  color: #fff;
+  box-shadow: 0 8px 24px rgba(124, 58, 237, 0.45);
+}
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
