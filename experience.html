@@ -31,30 +31,19 @@
 <body class="bg-[#0b0b0b] text-white font-poppins overflow-x-hidden">
 <div class="global-grid"></div>
 
-<!-- NAVBAR (FIXED - closing tag was wrong + body was closed too early) -->
-<nav class="fixed top-0 left-0 w-full z-50" style="background: rgba(8, 4, 18, 0.92); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid rgba(124, 58, 237, 0.15);">
-  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+<nav class="navbar">
+  <div class="nav-container">
 
     <!-- LOGO -->
-    <a href="index.html" class="text-xl font-bold logo">
-      Mas<span class="text-purple-300">Hafidz</span>
-    </a>
+    <div class="logo">Mas<span>Hafidz</span></div>
 
     <!-- DESKTOP MENU -->
-    <ul class="hidden md:flex gap-8 items-center">
-      <li><a href="index.html" class="text-gray-100 font-medium hover:text-purple-400 transition">Home</a></li>
-      <li><a href="project.html" class="text-gray-100 font-medium hover:text-purple-400 transition">Project</a></li>
-      <li><a href="experience.html" class="text-purple-400 font-medium">Experience</a></li>
-      <li><a href="skills.html" class="text-gray-100 font-medium hover:text-purple-400 transition">Skills</a></li>
-      <li>
-      <a href="contact.html" 
-   class="px-5 py-2 text-white font-semibold rounded-full transition
-          bg-gradient-to-br from-purple-500 to-purple-700
-          shadow-[0_4px_20px_rgba(124,58,237,0.5)]
-          hover:shadow-[0_6px_28px_rgba(168,85,247,0.65)]">
-  Contact Me
-</a>
-      </li>
+    <ul class="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="project.html">Project</a></li>
+      <li><a href="experience.html" class="active">Experience</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="contact.html" class="btn">Contact Me</a></li>
     </ul>
 
     <!-- HAMBURGER -->
@@ -68,6 +57,7 @@
 
   </div>
 </nav>
+
 <div class="pt-[72px]"></div>
 <!-- MOBILE MENU -->
  <div id="mobile-menu"
