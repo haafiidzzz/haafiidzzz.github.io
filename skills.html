@@ -31,22 +31,30 @@
 
 <body class="bg-[#0b0b0b] text-white font-poppins overflow-x-hidden">
 
-<nav class="navbar">
-  <div class="nav-container">
+<!-- NAVBAR (FIXED - closing tag was wrong before) -->
+<nav class="w-full backdrop-blur bg-black/60 border-b border-white/5">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
     <!-- LOGO -->
-    <div class="logo">Mas<span>Hafidz</span></div>
+    <h1 class="text-xl font-bold text-purple-500">
+      Mas<span class="text-purple-300">Hafidz</span>
+    </h1>
 
     <!-- DESKTOP MENU -->
-    <ul class="nav-menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="project.html">Project</a></li>
-      <li><a href="experience.html" class="active">Experience</a></li>
-      <li><a href="skills.html">Skills</a></li>
-      <li><a href="contact.html" class="btn">Contact Me</a></li>
+    <ul class="hidden md:flex gap-8 text-gray-300">
+      <li><a href="index.html" class="hover:text-purple-400">Home</a></li>
+      <li><a href="project.html" class="hover:text-purple-400">Project</a></li>
+      <li><a href="experience.html" class="hover:text-purple-400">Experience</a></li>
+      <li><a href="skills.html" class="text-purple-400">Skills</a></li>
+      <li>
+        <a href="contact.html"
+           class="px-4 py-2 bg-purple-600 rounded-lg text-white hover:bg-purple-700">
+          Contact Me
+        </a>
+      </li>
     </ul>
 
-    <!-- HAMBURGER -->
+    <!-- HAMBURGER (MOBILE) -->
     <button id="menu-btn" class="md:hidden text-white focus:outline-none">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none"
            viewBox="0 0 24 24" stroke="currentColor">
@@ -57,7 +65,6 @@
 
   </div>
 </nav>
-
 
 <!-- MOBILE MENU -->
  <div id="mobile-menu"
