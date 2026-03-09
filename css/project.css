@@ -156,23 +156,7 @@ html, body {
   height: 100%;
 }
 
-nav {
-  background: rgba(8, 4, 18, 0.92);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(124, 58, 237, 0.15);
-  box-shadow: none;
-}
 
-nav a {
-  color: #f9fafb;
-  font-weight: 500;
-}
-
-nav a:hover,
-nav a.active {
-  color: #a855f7;
-}
 
 .logo {
   color: #d8b4fe;
@@ -181,21 +165,6 @@ nav a.active {
     0 0 20px rgba(124, 58, 237, 0.25);
 }
 
-nav .btn-nav,
-nav .contact-btn {
-  background: linear-gradient(135deg, #a855f7, #7c3aed);
-  color: #fff;
-  border-radius: 999px;
-  padding: 10px 24px;
-  font-weight: 600;
-  box-shadow: 0 4px 20px rgba(124, 58, 237, 0.5);
-  transition: box-shadow 0.3s ease;
-}
-
-nav .btn-nav:hover,
-nav .contact-btn:hover {
-  box-shadow: 0 6px 28px rgba(168, 85, 247, 0.65);
-}
 
 
 .footer::before {
@@ -215,10 +184,6 @@ nav .contact-btn:hover {
   z-index: 1;
 }
 
-
-nav a:hover {
-  color: #a78bfa;
-}
 
 @media (max-width: 900px) {
   .project-grid {

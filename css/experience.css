@@ -69,7 +69,6 @@
   background-size: 100% 100%, 48px 48px, 48px 48px;
 }
 
-/* FIXED: Removed nav/section/footer z-index override that was breaking mobile menu */
 section,
 footer {
   position: relative;
@@ -85,32 +84,7 @@ html, body {
   height: 100%;
 }
 
-<nav class="navbar">
-  <div class="nav-container">
 
-    <!-- LOGO -->
-    <div class="logo">Mas<span>Hafidz</span></div>
-
-    <!-- DESKTOP MENU -->
-    <ul class="nav-menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="project.html">Project</a></li>
-      <li><a href="experience.html" class="active">Experience</a></li>
-      <li><a href="skills.html">Skills</a></li>
-      <li><a href="contact.html" class="btn">Contact Me</a></li>
-    </ul>
-
-    <!-- HAMBURGER -->
-    <button id="menu-btn" class="md:hidden text-white focus:outline-none">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none"
-           viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"/>
-      </svg>
-    </button>
-
-  </div>
-</nav>
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
