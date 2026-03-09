@@ -17,8 +17,7 @@ body {
   position: fixed;
   width: 100%;
   top: 0;
-  background: transparent;
-  backdrop-filter: blur(12px);
+  background: transparent;`
   z-index: 1000;
 }
 
