@@ -11,7 +11,6 @@
   z-index: 2;
 }
 
-
 .page-header::before {
   content: "THE SKILLS";
   position: absolute;
@@ -26,6 +25,17 @@
   pointer-events: none;
 }
 
+.skills-grid {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 48px;
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+  place-items: center;
+  animation: fadeUp 0.8s ease;
+}
 
 .skills-grid img {
   width: 64px;
@@ -38,14 +48,6 @@
   opacity: 1;
   transform: scale(1.15);
   filter: drop-shadow(0 0 18px rgba(124,58,237,0.7));
-}
-
-
-@media (max-width: 600px) {
-  .skills-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 36px;
-  }
 }
 
 .skill-card {
@@ -76,72 +78,23 @@
   transform: scale(1.15);
 }
 
-.contact-footer {
-  padding: 120px 24px;
-  background: linear-gradient(to bottom, #0b0b0b, #050505);
-}
-
-.contact-footer {
-  max-width: 1200px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-}
-
-.contact-left h2 {
-  font-size: 28px;
-  font-weight: 700;
-  margin-bottom: 16px;
-}
-
-.contact-left p {
-  color: #9ca3af;
-  margin-bottom: 32px;
-}
-
-.contact-left ul {
-  list-style: none;
-  padding: 0;
-}
-
-.contact-left li {
-  margin-bottom: 16px;
-  color: #d1d5db;
-}
-
-
-@media (max-width: 768pxpx) {
+@media (max-width: 768px) {
   .skills-grid {
     grid-template-columns: repeat(3, 1fr);
   }
-
   .page-header::before {
     font-size: 80px;
   }
 }
 
-
-
-.skills-grid {
-  margin-top: 80px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); 
-  gap: 48px;
-  max-width: 520px;
-  margin-left: auto;
-  margin-right: auto;
-  place-items: center;
-  animation: fadeUp 0.8s ease;
+@media (max-width: 600px) {
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 36px;
+  }
 }
 
 @keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
 }

@@ -10,7 +10,9 @@ body {
   color: #fff;
 }
 
-
+/* =====================
+   NAVBAR - SATU-SATUNYA DEFINISI
+   ===================== */
 .navbar {
   position: fixed;
   width: 100%;
@@ -43,6 +45,7 @@ body {
   display: flex;
   gap: 24px;
   list-style: none;
+  align-items: center;
 }
 
 .nav-menu a {
@@ -63,7 +66,9 @@ body {
   color: white !important;
 }
 
-/* HERO */
+/* =====================
+   HERO
+   ===================== */
 .hero {
   max-width: 1200px;
   margin: 140px auto;
@@ -103,7 +108,9 @@ body {
   color: #7c3aed;
 }
 
-
+/* =====================
+   MISC
+   ===================== */
 .services {
   text-align: center;
   padding: 80px 20px;
@@ -147,9 +154,6 @@ body {
 .contact-footer {
   padding: 120px 24px;
   background: linear-gradient(to bottom, #0b0b0b, #050505);
-}
-
-.contact-footer {
   max-width: 1200px;
   margin: auto;
   display: grid;
@@ -178,3 +182,13 @@ body {
   color: #d1d5db;
 }
 
+/* =====================
+   HAMBURGER MOBILE HIDE
+   ===================== */
+@media (min-width: 768px) {
+  #menu-btn { display: none; }
+}
+
+@media (max-width: 767px) {
+  .nav-menu { display: none; }
+}
